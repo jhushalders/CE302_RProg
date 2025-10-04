@@ -1,8 +1,6 @@
-
-
 ## Estruturas de programação
 
-# Exercício Saudação
+# Exercício Saudação if/else
 h <- 2
 
 if (h >= 6 & h < 12) {
@@ -12,16 +10,16 @@ if (h >= 6 & h < 12) {
 } else if (h >= 18 & h < 23) {
   saudacao <- "Boa noite!"
 } else {
-  saudacao <- "Não enviar men;sagem!"
+  saudacao <- "Não enviar mensagem!"
   stop("Não enviar mensagem!")
 }
 
 saudacao
 
-# Exercício tipo de média
-#tipo <- "aritmetica"
-#tipo <- "harmonica"
-#tipo <- "geometrica"
+# Exercício tipo de média switch
+tipo <- "aritmetica"
+tipo <- "harmonica"
+tipo <- "geometrica"
 tipo <- "ajhfaksfhdkashd"
 
 x <- 1:10
@@ -75,6 +73,17 @@ while(tentativas < n_max) {
 }
 tentativas
 
+#repeat
+total = 0
+i = 1L
+repeat {
+  u = total + runif(1)
+  if (sum(u) > 4) break
+  total = u
+  i = i + 1L
+}
+total
+
 # Exercício · Número médio de tentativas
 
 output <- c()
@@ -97,6 +106,21 @@ hist(output)
 
 ## Funções
 
+message()#mensagem neutra pro usuario
+warning()#aviso pro usuario
+stop()#erro pro usuario
+
+#IMC
+imc = function(peso, altura) {
+  imc = peso/(altura^2)
+  limits = c(0, 18.5, 25, 30, Inf)
+  labels = c("Magreza", "Adequado", "Pré-obeso", "Obesidade")
+  classif = labels[findInterval(imc, limits)]
+  return(list(IMC = imc, Classificao = classif))
+}
+
+imc(peso = 80, altura = 1.63)
+
 # Formula de baskara
 baskara <- function(a, b = 1, c = 0) {
   delta <- b^2 - 4 * a * c
@@ -104,9 +128,9 @@ baskara <- function(a, b = 1, c = 0) {
   return(x)
 }
 
-args(baskara)
-formals(baskara)
-body(baskara)
+args(baskara) # mostra os argumentos
+formals(baskara) # lista de argumentos
+body(baskara) # corpo da função
 
 curve(2 * x^2 - 3 * x -3, from = -1, to = 3)
 abline(h = 0, col = "red")
