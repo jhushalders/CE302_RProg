@@ -1,0 +1,1785 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.32">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Provas - 2024</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="provas - 2024_files/libs/clipboard/clipboard.min.js"></script>
+<script src="provas - 2024_files/libs/quarto-html/quarto.js" type="module"></script>
+<script src="provas - 2024_files/libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="provas - 2024_files/libs/quarto-html/popper.min.js"></script>
+<script src="provas - 2024_files/libs/quarto-html/tippy.umd.min.js"></script>
+<script src="provas - 2024_files/libs/quarto-html/anchor.min.js"></script>
+<link href="provas - 2024_files/libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="provas - 2024_files/libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="provas - 2024_files/libs/bootstrap/bootstrap.min.js"></script>
+<link href="provas - 2024_files/libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="provas - 2024_files/libs/bootstrap/bootstrap-7578c229c2dc9b8d0612f9183279dffe.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+</head>
+
+<body class="fullcontent quarto-light">
+
+<div id="quarto-content" class="page-columns page-rows-contents page-layout-article">
+
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Provas - 2024</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="prova-1" class="level1">
+<h1>Prova 1</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: pacote 'tidyverse' foi compilado no R versão 4.4.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: pacote 'tidyr' foi compilado no R versão 4.4.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: pacote 'stringr' foi compilado no R versão 4.4.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: pacote 'forcats' foi compilado no R versão 4.4.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: pacote 'lubridate' foi compilado no R versão 4.4.2</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>── Attaching core tidyverse packages ──────────────────────── tidyverse 2.0.0 ──
+✔ dplyr     1.1.4     ✔ readr     2.1.5
+✔ forcats   1.0.0     ✔ stringr   1.5.1
+✔ ggplot2   3.5.1     ✔ tibble    3.2.1
+✔ lubridate 1.9.3     ✔ tidyr     1.3.1
+✔ purrr     1.0.2     
+── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+✖ dplyr::filter() masks stats::filter()
+✖ dplyr::lag()    masks stats::lag()
+ℹ Use the conflicted package (&lt;http://conflicted.r-lib.org/&gt;) to force all conflicts to become errors</code></pre>
+</div>
+</div>
+<section id="a-partir-do-data-frame-dado-responda-às-questões-pedidas" class="level3">
+<h3 class="anchored" data-anchor-id="a-partir-do-data-frame-dado-responda-às-questões-pedidas">1) A partir do data frame dado, responda às questões pedidas:</h3>
+<ul>
+<li><ol type="a">
+<li>Raiz quadrada da média de eficiência;</li>
+</ol></li>
+<li><ol start="2" type="a">
+<li>Mediana dos que passaram no teste;</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>maior eficiência;</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>quais passaram no teste;</li>
+</ol></li>
+<li><ol start="5" type="a">
+<li>desvio padrão.</li>
+</ol></li>
+</ul>
+<p><strong>Data frame</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#1) </span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>DF1 <span class="ot">&lt;-</span><span class="fu">data.frame</span>(</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  Eficiência <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">36.53</span>, <span class="fl">82.66</span>, <span class="fl">97.48</span>, <span class="fl">43.86</span>, <span class="fl">54.63</span>, <span class="fl">32.54</span>, <span class="fl">7.47</span>, <span class="fl">51.09</span>, <span class="fl">58.78</span>, <span class="fl">97.65</span>),</span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Testes_Qualidade =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>)</span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="fu">View</span>(DF1)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Resultados</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Cria o data frame</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>DF1 <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  Eficiência <span class="ot">=</span> <span class="fu">c</span>(<span class="fl">36.53</span>, <span class="fl">82.66</span>, <span class="fl">97.48</span>, <span class="fl">43.86</span>, <span class="fl">54.63</span>, <span class="fl">32.54</span>, <span class="fl">7.47</span>, <span class="fl">51.09</span>, <span class="fl">58.78</span>, <span class="fl">97.65</span>),</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="at">Testes_Qualidade =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>)</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a><span class="co"># a) Raiz quadrada da média de eficiência</span></span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a>raiz_quadrada_media <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="fu">mean</span>(DF1<span class="sc">$</span>Eficiência))</span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a><span class="co"># b) Mediana dos que passaram no teste (Testes_Qualidade == TRUE)</span></span>
+<span id="cb9-11"><a href="#cb9-11" aria-hidden="true" tabindex="-1"></a>eficiencia_passou <span class="ot">&lt;-</span> DF1<span class="sc">$</span>Eficiência[DF1<span class="sc">$</span>Testes_Qualidade <span class="sc">==</span> <span class="cn">TRUE</span>]</span>
+<span id="cb9-12"><a href="#cb9-12" aria-hidden="true" tabindex="-1"></a>mediana_passou <span class="ot">&lt;-</span> <span class="fu">median</span>(eficiencia_passou)</span>
+<span id="cb9-13"><a href="#cb9-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-14"><a href="#cb9-14" aria-hidden="true" tabindex="-1"></a><span class="co"># c) Maior eficiência</span></span>
+<span id="cb9-15"><a href="#cb9-15" aria-hidden="true" tabindex="-1"></a>maior_eficiencia <span class="ot">&lt;-</span> <span class="fu">max</span>(DF1<span class="sc">$</span>Eficiência)</span>
+<span id="cb9-16"><a href="#cb9-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-17"><a href="#cb9-17" aria-hidden="true" tabindex="-1"></a><span class="co"># d) Quais (valores de eficiência) passaram no teste</span></span>
+<span id="cb9-18"><a href="#cb9-18" aria-hidden="true" tabindex="-1"></a>quais_passaram <span class="ot">&lt;-</span> eficiencia_passou</span>
+<span id="cb9-19"><a href="#cb9-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-20"><a href="#cb9-20" aria-hidden="true" tabindex="-1"></a><span class="co"># e) Desvio padrão da eficiência</span></span>
+<span id="cb9-21"><a href="#cb9-21" aria-hidden="true" tabindex="-1"></a>desvio_padrao <span class="ot">&lt;-</span> <span class="fu">sd</span>(DF1<span class="sc">$</span>Eficiência)</span>
+<span id="cb9-22"><a href="#cb9-22" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-23"><a href="#cb9-23" aria-hidden="true" tabindex="-1"></a><span class="co"># Exibe os resultados</span></span>
+<span id="cb9-24"><a href="#cb9-24" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"--- Resultados ---</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>--- Resultados ---</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"a) Raiz quadrada da média de eficiência:"</span>, <span class="fu">round</span>(raiz_quadrada_media, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a) Raiz quadrada da média de eficiência: 7.5013 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"b) Mediana dos que passaram no teste:"</span>, mediana_passou, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>b) Mediana dos que passaram no teste: 97.48 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"c) Maior eficiência:"</span>, maior_eficiencia, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>c) Maior eficiência: 97.65 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"d) Eficiências que passaram no teste:"</span>, <span class="fu">paste</span>(quais_passaram, <span class="at">collapse =</span> <span class="st">", "</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>d) Eficiências que passaram no teste: 82.66, 97.48, 97.65 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"e) Desvio padrão da eficiência:"</span>, <span class="fu">round</span>(desvio_padrao, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>e) Desvio padrão da eficiência: 29.1186 </code></pre>
+</div>
+</div>
+</section>
+<section id="dadas-as-matrizes-responda-o-que-se-pede" class="level3">
+<h3 class="anchored" data-anchor-id="dadas-as-matrizes-responda-o-que-se-pede">2) Dadas as matrizes, responda o que se pede:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>Indivíduo_1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">14.4</span>, <span class="fl">7.3</span>, <span class="fl">11.0</span>, <span class="fl">8.3</span>, <span class="fl">12.5</span>, <span class="fl">8.1</span>, <span class="fl">12.7</span>, <span class="fl">11.9</span>, <span class="fl">11.3</span>, <span class="fl">10.5</span>)</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>Indivíduo_2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">13.6</span>, <span class="fl">8.9</span>, <span class="fl">5.4</span>, <span class="fl">14.0</span>, <span class="fl">8.6</span>, <span class="fl">12.0</span>, <span class="fl">8.8</span>, <span class="fl">7.5</span>, <span class="fl">12.8</span>, <span class="fl">10.7</span>)</span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a>Indivíduo_3 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">8.9</span>, <span class="fl">10.4</span>, <span class="fl">11.9</span>, <span class="fl">13.0</span>, <span class="fl">14.0</span>, <span class="fl">13.8</span>, <span class="fl">9.1</span>, <span class="fl">5.0</span>, <span class="fl">6.7</span>, <span class="fl">14.6</span>)</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>Indivíduo_4 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">13.0</span>, <span class="fl">9.7</span>, <span class="fl">13.5</span>, <span class="fl">11.5</span>, <span class="fl">12.0</span>, <span class="fl">6.7</span>, <span class="fl">6.2</span>, <span class="fl">14.0</span>, <span class="fl">6.2</span>, <span class="fl">14.5</span>)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>Indivíduo_5 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">8.7</span>, <span class="fl">6.2</span>, <span class="fl">13.1</span>, <span class="fl">8.1</span>, <span class="fl">9.1</span>, <span class="fl">12.3</span>, <span class="fl">7.6</span>, <span class="fl">6.7</span>, <span class="fl">6.3</span>, <span class="fl">10.5</span>)</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a>Matrix_X_linhas <span class="ot">&lt;-</span> <span class="fu">rbind</span>(Indivíduo_1,</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>                         Indivíduo_2,</span>
+<span id="cb21-9"><a href="#cb21-9" aria-hidden="true" tabindex="-1"></a>                         Indivíduo_3,</span>
+<span id="cb21-10"><a href="#cb21-10" aria-hidden="true" tabindex="-1"></a>                         Indivíduo_4,</span>
+<span id="cb21-11"><a href="#cb21-11" aria-hidden="true" tabindex="-1"></a>                         Indivíduo_5) <span class="co">#Pré-tratamento</span></span>
+<span id="cb21-12"><a href="#cb21-12" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(Matrix_X_linhas) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"gene1"</span>, <span class="st">"gene2"</span>, <span class="st">"gene3"</span>, <span class="st">"gene4"</span>, <span class="st">"gene5"</span>, <span class="st">"gene6"</span>, <span class="st">"gene7"</span>, <span class="st">"gene8"</span>, <span class="st">"gene9"</span>, <span class="st">"gene10"</span>)</span>
+<span id="cb21-13"><a href="#cb21-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-14"><a href="#cb21-14" aria-hidden="true" tabindex="-1"></a>Yndivíduo_1 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">9.2</span>, <span class="fl">7.8</span>, <span class="fl">13.5</span>, <span class="fl">13.9</span>, <span class="fl">8.1</span>, <span class="fl">5.2</span>, <span class="fl">8.8</span>, <span class="fl">10.0</span>, <span class="fl">8.7</span>, <span class="fl">5.5</span>)</span>
+<span id="cb21-15"><a href="#cb21-15" aria-hidden="true" tabindex="-1"></a>Yndivíduo_2 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">9.1</span>, <span class="fl">9.6</span>, <span class="fl">5.5</span>, <span class="fl">8.0</span>, <span class="fl">5.7</span>, <span class="fl">6.3</span>, <span class="fl">6.1</span>, <span class="fl">7.1</span>, <span class="fl">9.1</span>, <span class="fl">7.1</span>)</span>
+<span id="cb21-16"><a href="#cb21-16" aria-hidden="true" tabindex="-1"></a>Yndivíduo_3 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">10.6</span>, <span class="fl">10.7</span>, <span class="fl">8.7</span>, <span class="fl">14.4</span>, <span class="fl">8.9</span>, <span class="fl">10.0</span>, <span class="fl">9.3</span>, <span class="fl">10.5</span>, <span class="fl">13.2</span>, <span class="fl">10.8</span>)</span>
+<span id="cb21-17"><a href="#cb21-17" aria-hidden="true" tabindex="-1"></a>Yndivíduo_4 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">12.9</span>, <span class="fl">6.7</span>, <span class="fl">5.9</span>, <span class="fl">11.3</span>, <span class="fl">13.5</span>, <span class="fl">6.7</span>, <span class="fl">9.9</span>, <span class="fl">8.9</span>, <span class="fl">9.4</span>, <span class="fl">6.6</span>)</span>
+<span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>Yndivíduo_5 <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="fl">10.9</span>, <span class="fl">11.4</span>, <span class="fl">14.4</span>, <span class="fl">5.8</span>, <span class="fl">12.9</span>, <span class="fl">6.6</span>, <span class="fl">5.6</span>, <span class="fl">7.1</span>, <span class="fl">14.3</span>, <span class="fl">14.2</span>)</span>
+<span id="cb21-19"><a href="#cb21-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-20"><a href="#cb21-20" aria-hidden="true" tabindex="-1"></a>Matrix_Y_linhas <span class="ot">&lt;-</span> <span class="fu">rbind</span>(Yndivíduo_1,</span>
+<span id="cb21-21"><a href="#cb21-21" aria-hidden="true" tabindex="-1"></a>                         Yndivíduo_2,</span>
+<span id="cb21-22"><a href="#cb21-22" aria-hidden="true" tabindex="-1"></a>                         Yndivíduo_3,</span>
+<span id="cb21-23"><a href="#cb21-23" aria-hidden="true" tabindex="-1"></a>                         Yndivíduo_4,</span>
+<span id="cb21-24"><a href="#cb21-24" aria-hidden="true" tabindex="-1"></a>                         Yndivíduo_5) <span class="co">#Pós-tratamento</span></span>
+<span id="cb21-25"><a href="#cb21-25" aria-hidden="true" tabindex="-1"></a><span class="fu">colnames</span>(Matrix_Y_linhas) <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"gene1"</span>, <span class="st">"gene2"</span>, <span class="st">"gene3"</span>, <span class="st">"gene4"</span>, <span class="st">"gene5"</span>, <span class="st">"gene6"</span>, <span class="st">"gene7"</span>, <span class="st">"gene8"</span>, <span class="st">"gene9"</span>, <span class="st">"gene10"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># a) Qual é o NOME do gene com a MAIOR média de expressão na Matrix_X_linhas?</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>Médias_Colunas_X <span class="ot">&lt;-</span> <span class="fu">colMeans</span>(Matrix_X_linhas)</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Acha o valor máximo</span></span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>Gen_maior_valor <span class="ot">&lt;-</span> <span class="fu">max</span>(Médias_Colunas_X)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Acha o NOME do gene (índice) que corresponde a esse valor</span></span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>Nome_Gen_maior <span class="ot">&lt;-</span> <span class="fu">names</span>(Médias_Colunas_X)[<span class="fu">which.max</span>(Médias_Colunas_X)]</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"a) Gene com a maior média na Matrix_X_linhas:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a) Gene com a maior média na Matrix_X_linhas:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Valor da maior média:"</span>, <span class="fu">round</span>(Gen_maior_valor, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Valor da maior média: 12.16 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Nome do gene:"</span>, Nome_Gen_maior, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Nome do gene: gene10 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># b) Multiplicação Matricial Transposta: Matrix_X_linhas * t(Matrix_X_linhas)</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a><span class="co"># O seu cálculo com 'tcrossprod(Matrix_X_linhas)' está correto, pois ele</span></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a><span class="co"># calcula X %*% t(X), que é o que geralmente se deseja em análise de variância.</span></span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a>mult_X_T <span class="ot">&lt;-</span> <span class="fu">tcrossprod</span>(Matrix_X_linhas)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"b) Resultado da multiplicação Matrix_X_linhas * t(Matrix_X_linhas):</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>b) Resultado da multiplicação Matrix_X_linhas * t(Matrix_X_linhas):</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(mult_X_T)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>            Indivíduo_1 Indivíduo_2 Indivíduo_3 Indivíduo_4 Indivíduo_5
+Indivíduo_1     1213.24     1099.11     1133.74     1173.88      952.94
+Indivíduo_2     1099.11     1119.31     1105.42     1074.70      893.62
+Indivíduo_3     1133.74     1105.42     1250.28     1166.85      998.41
+Indivíduo_4     1173.88     1074.70     1166.85     1249.61      967.08
+Indivíduo_5      952.94      893.62      998.41      967.08      838.04</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># c) Qual é o NOME do gene com a MENOR alteração de expressão (Média_X - Média_Y)?</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>Médias_Colunas_Y <span class="ot">&lt;-</span> <span class="fu">colMeans</span>(Matrix_Y_linhas)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a>Alterações <span class="ot">&lt;-</span> Médias_Colunas_X <span class="sc">-</span> Médias_Colunas_Y</span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Acha o valor mínimo (menor alteração)</span></span>
+<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>Menor_alt_valor <span class="ot">&lt;-</span> <span class="fu">min</span>(Alterações)</span>
+<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Acha o NOME do gene que corresponde a esse valor</span></span>
+<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a>Nome_Menor_alt <span class="ot">&lt;-</span> <span class="fu">names</span>(Alterações)[<span class="fu">which.min</span>(Alterações)]</span>
+<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"c) Gene com a menor alteração de expressão (Média X - Média Y):</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>c) Gene com a menor alteração de expressão (Média X - Média Y):</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Valor da menor alteração:"</span>, <span class="fu">round</span>(Menor_alt_valor, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Valor da menor alteração: -2.28 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Nome do gene:"</span>, Nome_Menor_alt, <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Nome do gene: gene9 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># e) Determine o determinante da submatriz quadrada 5x5 da Matrix_X_linhas</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a><span class="co">#    formada pelos 5 indivíduos e os 5 genes com as MAIORES médias.</span></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Encontrar os 5 genes com as MAIORES médias</span></span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a>Médias_Colunas_X <span class="ot">&lt;-</span> <span class="fu">colMeans</span>(Matrix_X_linhas)</span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>Maiores_5_genes <span class="ot">&lt;-</span> <span class="fu">tail</span>(<span class="fu">sort</span>(Médias_Colunas_X), <span class="dv">5</span>) <span class="co"># Obtém os 5 maiores valores</span></span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>Nomes_Maiores_5 <span class="ot">&lt;-</span> <span class="fu">names</span>(Maiores_5_genes) <span class="co"># Obtém os nomes dos 5 genes</span></span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-8"><a href="#cb39-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Criar a submatriz 5x5 (todas as 5 linhas/indivíduos e as 5 colunas/genes selecionadas)</span></span>
+<span id="cb39-9"><a href="#cb39-9" aria-hidden="true" tabindex="-1"></a>Cinco_M_X_square <span class="ot">&lt;-</span> Matrix_X_linhas[, Nomes_Maiores_5]</span>
+<span id="cb39-10"><a href="#cb39-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-11"><a href="#cb39-11" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Calcular o determinante</span></span>
+<span id="cb39-12"><a href="#cb39-12" aria-hidden="true" tabindex="-1"></a>Det_cinco <span class="ot">&lt;-</span> <span class="fu">det</span>(Cinco_M_X_square)</span>
+<span id="cb39-13"><a href="#cb39-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-14"><a href="#cb39-14" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"e) Determinante da submatriz 5x5 (5 indivíduos e 5 maiores genes):</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>e) Determinante da submatriz 5x5 (5 indivíduos e 5 maiores genes):</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Genes selecionados:"</span>, <span class="fu">paste</span>(Nomes_Maiores_5, <span class="at">collapse =</span> <span class="st">", "</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Genes selecionados: gene3, gene4, gene5, gene1, gene10 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Determinante:"</span>, <span class="fu">round</span>(Det_cinco, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Determinante: 7549.023 </code></pre>
+</div>
+</div>
+</section>
+<section id="a-partir-do-df-oferecido-dê-o-que-se-pede" class="level3">
+<h3 class="anchored" data-anchor-id="a-partir-do-df-oferecido-dê-o-que-se-pede">3) A partir do DF oferecido, dê o que se pede:</h3>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb45"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb45-1"><a href="#cb45-1" aria-hidden="true" tabindex="-1"></a><span class="co">#DF_FastFood &lt;- read.csv("C:/Users/anton/Downloads/archive/Datafiniti_Fast_Food_Restaurants.csv")</span></span>
+<span id="cb45-2"><a href="#cb45-2" aria-hidden="true" tabindex="-1"></a><span class="co"># --- a) Contagem total de restaurantes nas províncias CA, OH e IA ---</span></span>
+<span id="cb45-3"><a href="#cb45-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-4"><a href="#cb45-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Agrupa e Conta: Cria a tabela de resumo de contagem por província</span></span>
+<span id="cb45-5"><a href="#cb45-5" aria-hidden="true" tabindex="-1"></a><span class="co">#Rest_Prov &lt;- DF_FastFood %&gt;%</span></span>
+<span id="cb45-6"><a href="#cb45-6" aria-hidden="true" tabindex="-1"></a><span class="co">#  group_by(province) %&gt;%</span></span>
+<span id="cb45-7"><a href="#cb45-7" aria-hidden="true" tabindex="-1"></a><span class="co">#  summarise(contagem = n()) %&gt;%</span></span>
+<span id="cb45-8"><a href="#cb45-8" aria-hidden="true" tabindex="-1"></a><span class="co">#  arrange(desc(contagem))</span></span>
+<span id="cb45-9"><a href="#cb45-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-10"><a href="#cb45-10" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Filtrar e Extrair as contagens necessárias (CA, OH, IA)</span></span>
+<span id="cb45-11"><a href="#cb45-11" aria-hidden="true" tabindex="-1"></a><span class="co">#CA_count &lt;- Rest_Prov %&gt;% filter(province == "CA") %&gt;% pull(contagem)</span></span>
+<span id="cb45-12"><a href="#cb45-12" aria-hidden="true" tabindex="-1"></a><span class="co">#OH_count &lt;- Rest_Prov %&gt;% filter(province == "OH") %&gt;% pull(contagem)</span></span>
+<span id="cb45-13"><a href="#cb45-13" aria-hidden="true" tabindex="-1"></a><span class="co">#IA_count &lt;- Rest_Prov %&gt;% filter(province == "IA") %&gt;% pull(contagem)</span></span>
+<span id="cb45-14"><a href="#cb45-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-15"><a href="#cb45-15" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Calcular a soma total das contagens</span></span>
+<span id="cb45-16"><a href="#cb45-16" aria-hidden="true" tabindex="-1"></a><span class="co">#T_CA_OH_IA_Rest &lt;- sum(CA_count, OH_count, IA_count)</span></span>
+<span id="cb45-17"><a href="#cb45-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-18"><a href="#cb45-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Exibe os resultados</span></span>
+<span id="cb45-19"><a href="#cb45-19" aria-hidden="true" tabindex="-1"></a><span class="co">#cat("a) Contagem de restaurantes por província:\n")</span></span>
+<span id="cb45-20"><a href="#cb45-20" aria-hidden="true" tabindex="-1"></a><span class="co">#cat("   CA:", CA_count, "\n")</span></span>
+<span id="cb45-21"><a href="#cb45-21" aria-hidden="true" tabindex="-1"></a><span class="co">#cat("   OH:", OH_count, "\n")</span></span>
+<span id="cb45-22"><a href="#cb45-22" aria-hidden="true" tabindex="-1"></a><span class="co">#cat("   IA:", IA_count, "\n")</span></span>
+<span id="cb45-23"><a href="#cb45-23" aria-hidden="true" tabindex="-1"></a><span class="co">#cat("   Soma Total (CA + OH + IA):", T_CA_OH_IA_Rest, "\n\n")</span></span>
+<span id="cb45-24"><a href="#cb45-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-25"><a href="#cb45-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-26"><a href="#cb45-26" aria-hidden="true" tabindex="-1"></a><span class="co"># --- b) Qual província tem a contagem de 1201 (Se for essa a intenção) ---</span></span>
+<span id="cb45-27"><a href="#cb45-27" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-28"><a href="#cb45-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Se a intenção era descobrir QUAL província tem exatamente 1201 restaurantes:</span></span>
+<span id="cb45-29"><a href="#cb45-29" aria-hidden="true" tabindex="-1"></a><span class="co">#P1201_Rest &lt;- Rest_Prov %&gt;%</span></span>
+<span id="cb45-30"><a href="#cb45-30" aria-hidden="true" tabindex="-1"></a><span class="co">#  filter(contagem == 1201) %&gt;%</span></span>
+<span id="cb45-31"><a href="#cb45-31" aria-hidden="true" tabindex="-1"></a><span class="co">#  pull(province) # Puxa o nome da província</span></span>
+<span id="cb45-32"><a href="#cb45-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-33"><a href="#cb45-33" aria-hidden="true" tabindex="-1"></a><span class="co">#cat("b) Província(s) com exatamente 1201 restaurantes:\n")</span></span>
+<span id="cb45-34"><a href="#cb45-34" aria-hidden="true" tabindex="-1"></a><span class="co">#print(P1201_Rest)</span></span>
+<span id="cb45-35"><a href="#cb45-35" aria-hidden="true" tabindex="-1"></a><span class="co">#cat("\n")</span></span>
+<span id="cb45-36"><a href="#cb45-36" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-37"><a href="#cb45-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-38"><a href="#cb45-38" aria-hidden="true" tabindex="-1"></a><span class="co"># --- c) Filtrar por Categoria (Exemplo: "Pitas Republic") ---</span></span>
+<span id="cb45-39"><a href="#cb45-39" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-40"><a href="#cb45-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtra o data frame original para mostrar apenas restaurantes dessa categoria</span></span>
+<span id="cb45-41"><a href="#cb45-41" aria-hidden="true" tabindex="-1"></a><span class="co">#MaisC_Pits &lt;- DF_FastFood %&gt;%</span></span>
+<span id="cb45-42"><a href="#cb45-42" aria-hidden="true" tabindex="-1"></a><span class="co">#  filter(categories == "Pitas Republic")</span></span>
+<span id="cb45-43"><a href="#cb45-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb45-44"><a href="#cb45-44" aria-hidden="true" tabindex="-1"></a><span class="co">#cat("c) Detalhes dos restaurantes com categoria 'Pitas Republic':\n")</span></span>
+<span id="cb45-45"><a href="#cb45-45" aria-hidden="true" tabindex="-1"></a><span class="co">#View(MaisC_Pits)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+<section id="prova-2" class="level1">
+<h1>Prova 2</h1>
+<section id="section" class="level3">
+<h3 class="anchored" data-anchor-id="section">1)</h3>
+<p>A variância amostral (S2), o desvio médio absoluto (DMA) e o segundo coeficiente de assimetria de Pearson (AS_2) são medidas definidas, respectivamente, por:</p>
+<p><span class="math display">\[
+S2=1/n−1 ∑i=1n (xi−x¯)²
+\]</span></p>
+<p><span class="math display">\[
+DMA=1 n−1∑i=1n |xi−x¯|
+\]</span></p>
+<p><span class="math display">\[
+AS2=3⋅x¯−MdS
+\]</span></p>
+<p>em que x¯ é a média amostral, Md é a mediana e |a| corresponde ao módulo de a.</p>
+<p>Implemente uma função em R que retorne uma lista com o S2, o DMA e o AS2 de uma variável quantitativa qualquer. Considere o banco de dados airquality disponível no R, e responda o que se pede.</p>
+<ul>
+<li><ol type="a">
+<li>e b) S² e DMA de Temp</li>
+</ol></li>
+<li><ol start="3" type="a">
+<li>Nivel 7 de Month - Wind</li>
+</ol></li>
+<li><ol start="4" type="a">
+<li>Para todas as variáveis do banco airquality a variância amostral é maior do que o desvio médio absoluto. (TRUE = 1/FALSE = 0)?</li>
+</ol></li>
+</ul>
+<p><em>Resolução</em>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carrega o data frame airquality (já embutido no R)</span></span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a>dados <span class="ot">&lt;-</span> airquality</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Implementação da Função Solicitada</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Função que retorna a Variância Amostral (S²), o Desvio Médio Absoluto (DMA)</span></span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a><span class="co"># e o Segundo Coeficiente de Assimetria de Pearson (AS_2).</span></span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a>calcula_medidas <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Remove valores NA, conforme prática padrão para estatísticas</span></span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>  x <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(x)</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a>  n <span class="ot">&lt;-</span> <span class="fu">length</span>(x)</span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Estatísticas Básicas</span></span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a>  x_bar <span class="ot">&lt;-</span> <span class="fu">mean</span>(x) <span class="co"># Média</span></span>
+<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a>  Md <span class="ot">&lt;-</span> <span class="fu">median</span>(x)  <span class="co"># Mediana</span></span>
+<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb46-16"><a href="#cb46-16" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 1. Variância Amostral (S²)</span></span>
+<span id="cb46-17"><a href="#cb46-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Embora o R tenha sd(), vamos usar a fórmula explícita para S²</span></span>
+<span id="cb46-18"><a href="#cb46-18" aria-hidden="true" tabindex="-1"></a>  S2 <span class="ot">&lt;-</span> <span class="fu">sum</span>((x <span class="sc">-</span> x_bar)<span class="sc">^</span><span class="dv">2</span>) <span class="sc">/</span> (n <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb46-19"><a href="#cb46-19" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb46-20"><a href="#cb46-20" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 2. Desvio Médio Absoluto (DMA)</span></span>
+<span id="cb46-21"><a href="#cb46-21" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Usando a fórmula modificada fornecida (com n-1 no denominador, embora não seja a padrão)</span></span>
+<span id="cb46-22"><a href="#cb46-22" aria-hidden="true" tabindex="-1"></a>  DMA <span class="ot">&lt;-</span> <span class="fu">sum</span>(<span class="fu">abs</span>(x <span class="sc">-</span> x_bar)) <span class="sc">/</span> (n <span class="sc">-</span> <span class="dv">1</span>)</span>
+<span id="cb46-23"><a href="#cb46-23" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb46-24"><a href="#cb46-24" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 3. Segundo Coeficiente de Assimetria de Pearson (AS_2)</span></span>
+<span id="cb46-25"><a href="#cb46-25" aria-hidden="true" tabindex="-1"></a>  <span class="co"># O R não tem a função sd() embutida para ser usada sem argumentos;</span></span>
+<span id="cb46-26"><a href="#cb46-26" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Usaremos a raiz quadrada da nossa S2 para obter S (Desvio Padrão Amostral)</span></span>
+<span id="cb46-27"><a href="#cb46-27" aria-hidden="true" tabindex="-1"></a>  S <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(S2)</span>
+<span id="cb46-28"><a href="#cb46-28" aria-hidden="true" tabindex="-1"></a>  AS2 <span class="ot">&lt;-</span> <span class="dv">3</span> <span class="sc">*</span> (x_bar <span class="sc">-</span> Md) <span class="sc">/</span> S</span>
+<span id="cb46-29"><a href="#cb46-29" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb46-30"><a href="#cb46-30" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Retorna uma lista com os resultados</span></span>
+<span id="cb46-31"><a href="#cb46-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(</span>
+<span id="cb46-32"><a href="#cb46-32" aria-hidden="true" tabindex="-1"></a>    <span class="at">S2 =</span> S2,</span>
+<span id="cb46-33"><a href="#cb46-33" aria-hidden="true" tabindex="-1"></a>    <span class="at">DMA =</span> DMA,</span>
+<span id="cb46-34"><a href="#cb46-34" aria-hidden="true" tabindex="-1"></a>    <span class="at">AS2 =</span> AS2</span>
+<span id="cb46-35"><a href="#cb46-35" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb46-36"><a href="#cb46-36" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb46-37"><a href="#cb46-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-38"><a href="#cb46-38" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-39"><a href="#cb46-39" aria-hidden="true" tabindex="-1"></a><span class="co"># --- RESOLUÇÃO DOS ITENS ---</span></span>
+<span id="cb46-40"><a href="#cb46-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-41"><a href="#cb46-41" aria-hidden="true" tabindex="-1"></a><span class="co"># a) e b) S² e DMA de Temp</span></span>
+<span id="cb46-42"><a href="#cb46-42" aria-hidden="true" tabindex="-1"></a>resultados_temp <span class="ot">&lt;-</span> <span class="fu">calcula_medidas</span>(dados<span class="sc">$</span>Temp)</span>
+<span id="cb46-43"><a href="#cb46-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-44"><a href="#cb46-44" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"## a) e b) S² e DMA de Temp</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>## a) e b) S² e DMA de Temp</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   S² (Variância Amostral) de Temp:"</span>, <span class="fu">round</span>(resultados_temp<span class="sc">$</span>S2, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   S² (Variância Amostral) de Temp: 89.5913 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb50"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb50-1"><a href="#cb50-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   DMA (Desvio Médio Absoluto) de Temp:"</span>, <span class="fu">round</span>(resultados_temp<span class="sc">$</span>DMA, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   DMA (Desvio Médio Absoluto) de Temp: 7.6184 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb52"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb52-1"><a href="#cb52-1" aria-hidden="true" tabindex="-1"></a><span class="co"># c) Nível 7 de Month - Wind</span></span>
+<span id="cb52-2"><a href="#cb52-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Filtra os dados onde Month (Mês) é igual a 7</span></span>
+<span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>dados_mes_7 <span class="ot">&lt;-</span> <span class="fu">subset</span>(dados, Month <span class="sc">==</span> <span class="dv">7</span>)</span>
+<span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>resultados_wind_mes_7 <span class="ot">&lt;-</span> <span class="fu">calcula_medidas</span>(dados_mes_7<span class="sc">$</span>Wind)</span>
+<span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb52-6"><a href="#cb52-6" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"## c) Nivel 7 de Month - Wind</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>## c) Nivel 7 de Month - Wind</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   S² de Wind (Mês 7):"</span>, <span class="fu">round</span>(resultados_wind_mes_7<span class="sc">$</span>S2, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   S² de Wind (Mês 7): 9.2172 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   DMA de Wind (Mês 7):"</span>, <span class="fu">round</span>(resultados_wind_mes_7<span class="sc">$</span>DMA, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   DMA de Wind (Mês 7): 2.5075 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   AS2 de Wind (Mês 7):"</span>, <span class="fu">round</span>(resultados_wind_mes_7<span class="sc">$</span>AS2, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   AS2 de Wind (Mês 7): 0.3379 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># d) Para todas as variáveis do banco airquality a variância amostral é maior</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="co">#    do que o desvio médio absoluto. (TRUE = 1/FALSE = 0)?</span></span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-4"><a href="#cb60-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Variáveis quantitativas a serem testadas: Ozone, Solar.R, Wind, Temp</span></span>
+<span id="cb60-5"><a href="#cb60-5" aria-hidden="true" tabindex="-1"></a>colunas_quantitativas <span class="ot">&lt;-</span> <span class="fu">c</span>(<span class="st">"Ozone"</span>, <span class="st">"Solar.R"</span>, <span class="st">"Wind"</span>, <span class="st">"Temp"</span>)</span>
+<span id="cb60-6"><a href="#cb60-6" aria-hidden="true" tabindex="-1"></a>resultado_d <span class="ot">&lt;-</span> <span class="dv">1</span> <span class="co"># Assume TRUE (1) inicialmente</span></span>
+<span id="cb60-7"><a href="#cb60-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb60-8"><a href="#cb60-8" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"## d) Comparação S² &gt; DMA para todas as variáveis</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>## d) Comparação S² &gt; DMA para todas as variáveis</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (coluna <span class="cf">in</span> colunas_quantitativas) {</span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a>  medidas <span class="ot">&lt;-</span> <span class="fu">calcula_medidas</span>(dados[[coluna]])</span>
+<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb62-4"><a href="#cb62-4" aria-hidden="true" tabindex="-1"></a>  <span class="co"># A variância amostral (S²) deve ser maior que o Desvio Médio Absoluto (DMA)</span></span>
+<span id="cb62-5"><a href="#cb62-5" aria-hidden="true" tabindex="-1"></a>  condicao <span class="ot">&lt;-</span> medidas<span class="sc">$</span>S2 <span class="sc">&gt;</span> medidas<span class="sc">$</span>DMA</span>
+<span id="cb62-6"><a href="#cb62-6" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb62-7"><a href="#cb62-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="fu">sprintf</span>(<span class="st">"   %s: S² (%.4f) &gt; DMA (%.4f) -&gt; %s</span><span class="sc">\n</span><span class="st">"</span>, </span>
+<span id="cb62-8"><a href="#cb62-8" aria-hidden="true" tabindex="-1"></a>              coluna, medidas<span class="sc">$</span>S2, medidas<span class="sc">$</span>DMA, condicao))</span>
+<span id="cb62-9"><a href="#cb62-9" aria-hidden="true" tabindex="-1"></a>              </span>
+<span id="cb62-10"><a href="#cb62-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Se a condição for falsa para qualquer coluna, o resultado final é FALSE (0)</span></span>
+<span id="cb62-11"><a href="#cb62-11" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="sc">!</span>condicao) {</span>
+<span id="cb62-12"><a href="#cb62-12" aria-hidden="true" tabindex="-1"></a>    resultado_d <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb62-13"><a href="#cb62-13" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Não há break, para exibir o resultado de todas as colunas</span></span>
+<span id="cb62-14"><a href="#cb62-14" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb62-15"><a href="#cb62-15" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Ozone: S² (1088.2005) &gt; DMA (26.5793) -&gt; TRUE
+   Solar.R: S² (8110.5194) &gt; DMA (77.2408) -&gt; TRUE
+   Wind: S² (12.4115) &gt; DMA (2.8139) -&gt; TRUE
+   Temp: S² (89.5913) &gt; DMA (7.6184) -&gt; TRUE</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Resultado final (TRUE=1/FALSE=0):"</span>, resultado_d, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Resultado final (TRUE=1/FALSE=0): 1 </code></pre>
+</div>
+</div>
+</section>
+<section id="section-1" class="level3">
+<h3 class="anchored" data-anchor-id="section-1">2)</h3>
+<p>Considere uma matriz m×m, em que m é um inteiro positivo. Implemente uma função em R que realize a varredura de uma matriz e execute uma operação específica que depende do valor encontrado na matriz, conforme as seguintes regras:</p>
+<ul>
+<li><p>Se o valor for um número primo, multiplique-o por 6.</p></li>
+<li><p>Se o valor for um quadrado perfeito, subtraia 15. Caso o resultado obtido for negativo, eleve a 5a potência.</p></li>
+<li><p>Se o valor for negativo na matriz original, calcule a raiz 2ª de seu módulo.</p></li>
+<li><p>Para todos os outros valores, não faça nada.</p></li>
+</ul>
+<p>A função a ser criada deve retornar a matriz transformada.</p>
+<ul>
+<li>Dica: Crie funções auxiliares para verificar se um número é primo e se é um quadrado perfeito, e então implemente a função varrer_matriz que realiza a varredura da matriz conforme as regras estabelecidas.</li>
+</ul>
+<p>Considere: Matriz A: matrix( c(-5, -8, 4, -4, 9, -2, 6, 5, -3, -1, 3, -9, 10, 7, -6, 1) , nrow = 4, byrow = FALSE)</p>
+<p>Matriz B: matrix( c(9, -4, -18, 11, -14, 7, 2, 3, 17, 14, 0, 16, -6, -19, -8, -1, -20, 20, 5, 6) , nrow = 4, byrow = FALSE)</p>
+<p>Matriz C: matrix( c(-29, -23, -24, 21, -12, 25, 17, 16, 8, 29, 0, -5, -17, -4, -7, 14) , nrow = 4, byrow = FALSE)</p>
+<p><em>Resolução</em>:</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb66"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb66-1"><a href="#cb66-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- FUNÇÕES AUXILIARES (Corretas) ---</span></span>
+<span id="cb66-2"><a href="#cb66-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-3"><a href="#cb66-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Função para verificar se um número é primo</span></span>
+<span id="cb66-4"><a href="#cb66-4" aria-hidden="true" tabindex="-1"></a>primo <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb66-5"><a href="#cb66-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Primos são definidos apenas para números inteiros &gt; 1</span></span>
+<span id="cb66-6"><a href="#cb66-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.na</span>(x) <span class="sc">||</span> <span class="sc">!</span><span class="fu">is.numeric</span>(x) <span class="sc">||</span> x <span class="sc">&lt;=</span> <span class="dv">1</span> <span class="sc">||</span> x <span class="sc">%%</span> <span class="dv">1</span> <span class="sc">!=</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="cn">FALSE</span>)</span>
+<span id="cb66-7"><a href="#cb66-7" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb66-8"><a href="#cb66-8" aria-hidden="true" tabindex="-1"></a>  <span class="co"># O seu loop original (2:floor(sqrt(x))) é o mais eficiente para R base</span></span>
+<span id="cb66-9"><a href="#cb66-9" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">2</span><span class="sc">:</span><span class="fu">floor</span>(<span class="fu">sqrt</span>(x))) {</span>
+<span id="cb66-10"><a href="#cb66-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (x <span class="sc">%%</span> i <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">return</span>(<span class="cn">FALSE</span>)</span>
+<span id="cb66-11"><a href="#cb66-11" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb66-12"><a href="#cb66-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="cn">TRUE</span>)</span>
+<span id="cb66-13"><a href="#cb66-13" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb66-14"><a href="#cb66-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-15"><a href="#cb66-15" aria-hidden="true" tabindex="-1"></a><span class="co"># Função para verificar se é um quadrado perfeito</span></span>
+<span id="cb66-16"><a href="#cb66-16" aria-hidden="true" tabindex="-1"></a>quadrado_perfeito <span class="ot">&lt;-</span> <span class="cf">function</span>(x) {</span>
+<span id="cb66-17"><a href="#cb66-17" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Quadrados perfeitos são definidos para inteiros não negativos</span></span>
+<span id="cb66-18"><a href="#cb66-18" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">is.na</span>(x) <span class="sc">||</span> <span class="sc">!</span><span class="fu">is.numeric</span>(x) <span class="sc">||</span> x <span class="sc">&lt;</span> <span class="dv">0</span> <span class="sc">||</span> x <span class="sc">%%</span> <span class="dv">1</span> <span class="sc">!=</span> <span class="dv">0</span>) { </span>
+<span id="cb66-19"><a href="#cb66-19" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="cn">FALSE</span>)</span>
+<span id="cb66-20"><a href="#cb66-20" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb66-21"><a href="#cb66-21" aria-hidden="true" tabindex="-1"></a>  raiz <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(x)</span>
+<span id="cb66-22"><a href="#cb66-22" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Verifica se a raiz quadrada é um número inteiro</span></span>
+<span id="cb66-23"><a href="#cb66-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(raiz <span class="sc">==</span> <span class="fu">floor</span>(raiz))</span>
+<span id="cb66-24"><a href="#cb66-24" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb66-25"><a href="#cb66-25" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-26"><a href="#cb66-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-27"><a href="#cb66-27" aria-hidden="true" tabindex="-1"></a><span class="co"># --- FUNÇÃO PRINCIPAL ---</span></span>
+<span id="cb66-28"><a href="#cb66-28" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-29"><a href="#cb66-29" aria-hidden="true" tabindex="-1"></a><span class="co"># Função principal para aplicar as regras</span></span>
+<span id="cb66-30"><a href="#cb66-30" aria-hidden="true" tabindex="-1"></a>transforma_matriz <span class="ot">&lt;-</span> <span class="cf">function</span>(mat) {</span>
+<span id="cb66-31"><a href="#cb66-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">apply</span>(mat, <span class="fu">c</span>(<span class="dv">1</span>, <span class="dv">2</span>), <span class="cf">function</span>(x) {</span>
+<span id="cb66-32"><a href="#cb66-32" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (x <span class="sc">&lt;</span> <span class="dv">0</span>) {</span>
+<span id="cb66-33"><a href="#cb66-33" aria-hidden="true" tabindex="-1"></a>      <span class="co"># REGRA 3: Se o valor for negativo na matriz original, calcule a raiz 2ª de seu módulo.</span></span>
+<span id="cb66-34"><a href="#cb66-34" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="fu">abs</span>(x)<span class="sc">^</span>(<span class="dv">1</span><span class="sc">/</span><span class="dv">2</span>))</span>
+<span id="cb66-35"><a href="#cb66-35" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">primo</span>(x)) {</span>
+<span id="cb66-36"><a href="#cb66-36" aria-hidden="true" tabindex="-1"></a>      <span class="co"># REGRA 1: Se o valor for um número primo, multiplique-o por 6.</span></span>
+<span id="cb66-37"><a href="#cb66-37" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(x <span class="sc">*</span> <span class="dv">6</span>)</span>
+<span id="cb66-38"><a href="#cb66-38" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> <span class="cf">if</span> (<span class="fu">quadrado_perfeito</span>(x)) {</span>
+<span id="cb66-39"><a href="#cb66-39" aria-hidden="true" tabindex="-1"></a>      <span class="co"># REGRA 2: Se o valor for um quadrado perfeito, subtraia 15.</span></span>
+<span id="cb66-40"><a href="#cb66-40" aria-hidden="true" tabindex="-1"></a>      resultado <span class="ot">&lt;-</span> x <span class="sc">-</span> <span class="dv">15</span></span>
+<span id="cb66-41"><a href="#cb66-41" aria-hidden="true" tabindex="-1"></a>      <span class="cf">if</span> (resultado <span class="sc">&lt;</span> <span class="dv">0</span>) {</span>
+<span id="cb66-42"><a href="#cb66-42" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Caso o resultado obtido for negativo, eleve a 5a potência.</span></span>
+<span id="cb66-43"><a href="#cb66-43" aria-hidden="true" tabindex="-1"></a>        <span class="fu">return</span>(resultado<span class="sc">^</span><span class="dv">5</span>)</span>
+<span id="cb66-44"><a href="#cb66-44" aria-hidden="true" tabindex="-1"></a>      }</span>
+<span id="cb66-45"><a href="#cb66-45" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(resultado)</span>
+<span id="cb66-46"><a href="#cb66-46" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb66-47"><a href="#cb66-47" aria-hidden="true" tabindex="-1"></a>      <span class="co"># REGRA 4: Para todos os outros valores, não faça nada.</span></span>
+<span id="cb66-48"><a href="#cb66-48" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(x)</span>
+<span id="cb66-49"><a href="#cb66-49" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb66-50"><a href="#cb66-50" aria-hidden="true" tabindex="-1"></a>  })</span>
+<span id="cb66-51"><a href="#cb66-51" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb66-52"><a href="#cb66-52" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-53"><a href="#cb66-53" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-54"><a href="#cb66-54" aria-hidden="true" tabindex="-1"></a><span class="co"># --- EXECUÇÃO E TRANSFORMAÇÃO DAS MATRIZES ---</span></span>
+<span id="cb66-55"><a href="#cb66-55" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-56"><a href="#cb66-56" aria-hidden="true" tabindex="-1"></a>Matriz_A <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="fu">c</span>(<span class="sc">-</span><span class="dv">5</span>, <span class="sc">-</span><span class="dv">8</span>, <span class="dv">4</span>, <span class="sc">-</span><span class="dv">4</span>, <span class="dv">9</span>, <span class="sc">-</span><span class="dv">2</span>, <span class="dv">6</span>, <span class="dv">5</span>, <span class="sc">-</span><span class="dv">3</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="dv">3</span>, <span class="sc">-</span><span class="dv">9</span>, <span class="dv">10</span>, <span class="dv">7</span>, <span class="sc">-</span><span class="dv">6</span>, <span class="dv">1</span>) , <span class="at">nrow =</span> <span class="dv">4</span>, <span class="at">byrow =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb66-57"><a href="#cb66-57" aria-hidden="true" tabindex="-1"></a>Matriz_B <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="fu">c</span>(<span class="dv">9</span>, <span class="sc">-</span><span class="dv">4</span>, <span class="sc">-</span><span class="dv">18</span>, <span class="dv">11</span>, <span class="sc">-</span><span class="dv">14</span>, <span class="dv">7</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">17</span>, <span class="dv">14</span>, <span class="dv">0</span>, <span class="dv">16</span>, <span class="sc">-</span><span class="dv">6</span>, <span class="sc">-</span><span class="dv">19</span>, <span class="sc">-</span><span class="dv">8</span>, <span class="sc">-</span><span class="dv">1</span>, <span class="sc">-</span><span class="dv">20</span>, <span class="dv">20</span>, <span class="dv">5</span>, <span class="dv">6</span>) , <span class="at">nrow =</span> <span class="dv">4</span>, <span class="at">byrow =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb66-58"><a href="#cb66-58" aria-hidden="true" tabindex="-1"></a>Matriz_C <span class="ot">&lt;-</span> <span class="fu">matrix</span>( <span class="fu">c</span>(<span class="sc">-</span><span class="dv">29</span>, <span class="sc">-</span><span class="dv">23</span>, <span class="sc">-</span><span class="dv">24</span>, <span class="dv">21</span>, <span class="sc">-</span><span class="dv">12</span>, <span class="dv">25</span>, <span class="dv">17</span>, <span class="dv">16</span>, <span class="dv">8</span>, <span class="dv">29</span>, <span class="dv">0</span>, <span class="sc">-</span><span class="dv">5</span>, <span class="sc">-</span><span class="dv">17</span>, <span class="sc">-</span><span class="dv">4</span>, <span class="sc">-</span><span class="dv">7</span>, <span class="dv">14</span>) , <span class="at">nrow =</span> <span class="dv">4</span>, <span class="at">byrow =</span> <span class="cn">FALSE</span>)</span>
+<span id="cb66-59"><a href="#cb66-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-60"><a href="#cb66-60" aria-hidden="true" tabindex="-1"></a>M_A_transformada <span class="ot">&lt;-</span> <span class="fu">transforma_matriz</span>(Matriz_A)</span>
+<span id="cb66-61"><a href="#cb66-61" aria-hidden="true" tabindex="-1"></a>M_B_transformada <span class="ot">&lt;-</span> <span class="fu">transforma_matriz</span>(Matriz_B)</span>
+<span id="cb66-62"><a href="#cb66-62" aria-hidden="true" tabindex="-1"></a>M_C_transformada <span class="ot">&lt;-</span> <span class="fu">transforma_matriz</span>(Matriz_C)</span>
+<span id="cb66-63"><a href="#cb66-63" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb66-64"><a href="#cb66-64" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"Matriz A Transformada:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>Matriz A Transformada:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb68"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb68-1"><a href="#cb68-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(M_A_transformada)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>              [,1]         [,2]     [,3]         [,4]
+[1,]  2.236068e+00 -7776.000000 1.732051  1.00000e+01
+[2,]  2.828427e+00     1.414214 1.000000  4.20000e+01
+[3,] -1.610510e+05     6.000000 3.000000  2.44949e+00
+[4,]  2.000000e+00    30.000000 3.000000 -5.37824e+05</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb70"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb70-1"><a href="#cb70-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Matriz B Transformada:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Matriz B Transformada:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb72"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb72-1"><a href="#cb72-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(M_B_transformada)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>             [,1]      [,2]    [,3]     [,4]      [,5]
+[1,] -7776.000000  3.741657     102 2.449490  4.472136
+[2,]     2.000000 42.000000      14 4.358899 20.000000
+[3,]     4.242641  2.000000 -759375 2.828427 30.000000
+[4,]    66.000000  3.000000       1 1.000000  6.000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">Matriz C Transformada:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>
+Matriz C Transformada:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(M_C_transformada)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          [,1]       [,2]          [,3]      [,4]
+[1,]  5.385165   3.464102  8.000000e+00  4.123106
+[2,]  4.795832  10.000000  1.740000e+02  2.000000
+[3,]  4.898979 102.000000 -7.593750e+05  2.645751
+[4,] 21.000000   1.000000  2.236068e+00 14.000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb79"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb79-1"><a href="#cb79-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- RESOLUÇÃO DOS ITENS ---</span></span>
+<span id="cb79-2"><a href="#cb79-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb79-3"><a href="#cb79-3" aria-hidden="true" tabindex="-1"></a><span class="co"># a) Soma dos elementos da diagonal principal da Matriz A transformada</span></span>
+<span id="cb79-4"><a href="#cb79-4" aria-hidden="true" tabindex="-1"></a>soma_MA <span class="ot">&lt;-</span> M_A_transformada[<span class="dv">1</span>,<span class="dv">1</span>] <span class="sc">+</span> M_A_transformada[<span class="dv">2</span>,<span class="dv">2</span>] <span class="sc">+</span> M_A_transformada[<span class="dv">3</span>,<span class="dv">3</span>] <span class="sc">+</span> M_A_transformada[<span class="dv">4</span>,<span class="dv">4</span>]</span>
+<span id="cb79-5"><a href="#cb79-5" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"a) Soma dos elementos da diagonal principal da Matriz A transformada:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a) Soma dos elementos da diagonal principal da Matriz A transformada:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb81"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb81-1"><a href="#cb81-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Resultado:"</span>, <span class="fu">round</span>(soma_MA, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Resultado: -537817.3 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="co"># b) Matriz C transformada (já impressa acima, mas a solicitação pede apenas a visualização)</span></span>
+<span id="cb83-2"><a href="#cb83-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"b) Matriz C transformada (visualização):</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>b) Matriz C transformada (visualização):</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(M_C_transformada)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>          [,1]       [,2]          [,3]      [,4]
+[1,]  5.385165   3.464102  8.000000e+00  4.123106
+[2,]  4.795832  10.000000  1.740000e+02  2.000000
+[3,]  4.898979 102.000000 -7.593750e+05  2.645751
+[4,] 21.000000   1.000000  2.236068e+00 14.000000</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb88"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb88-1"><a href="#cb88-1" aria-hidden="true" tabindex="-1"></a><span class="co"># c) Soma dos elementos da segunda coluna da Matriz C transformada</span></span>
+<span id="cb88-2"><a href="#cb88-2" aria-hidden="true" tabindex="-1"></a>soma_coluna_2_MC <span class="ot">&lt;-</span> <span class="fu">sum</span>(M_C_transformada[, <span class="dv">2</span>])</span>
+<span id="cb88-3"><a href="#cb88-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"c) Soma dos elementos da segunda coluna da Matriz C transformada:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>c) Soma dos elementos da segunda coluna da Matriz C transformada:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb90"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb90-1"><a href="#cb90-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Resultado:"</span>, <span class="fu">round</span>(soma_coluna_2_MC, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Resultado: 116.4641 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="co"># d) Contagem total de números primos nas matrizes transformadas A, B e C</span></span>
+<span id="cb92-2"><a href="#cb92-2" aria-hidden="true" tabindex="-1"></a><span class="co"># REUSAR A FUNÇÃO PRIMO ORIGINAL, A QUE FOI INSERIDA NO ITEM D ERA INVÁLIDA</span></span>
+<span id="cb92-3"><a href="#cb92-3" aria-hidden="true" tabindex="-1"></a>contar_primos <span class="ot">&lt;-</span> <span class="cf">function</span>(matriz) {</span>
+<span id="cb92-4"><a href="#cb92-4" aria-hidden="true" tabindex="-1"></a>  conta_primos <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb92-5"><a href="#cb92-5" aria-hidden="true" tabindex="-1"></a>  <span class="co"># varrer todos os elementos da matriz</span></span>
+<span id="cb92-6"><a href="#cb92-6" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (n <span class="cf">in</span> matriz) {</span>
+<span id="cb92-7"><a href="#cb92-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">primo</span>(n)) {</span>
+<span id="cb92-8"><a href="#cb92-8" aria-hidden="true" tabindex="-1"></a>      conta_primos <span class="ot">&lt;-</span> conta_primos <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb92-9"><a href="#cb92-9" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb92-10"><a href="#cb92-10" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb92-11"><a href="#cb92-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(conta_primos)</span>
+<span id="cb92-12"><a href="#cb92-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb92-13"><a href="#cb92-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb92-14"><a href="#cb92-14" aria-hidden="true" tabindex="-1"></a>iA <span class="ot">&lt;-</span> <span class="fu">contar_primos</span>(M_A_transformada)</span>
+<span id="cb92-15"><a href="#cb92-15" aria-hidden="true" tabindex="-1"></a>iB <span class="ot">&lt;-</span> <span class="fu">contar_primos</span>(M_B_transformada)</span>
+<span id="cb92-16"><a href="#cb92-16" aria-hidden="true" tabindex="-1"></a>iC <span class="ot">&lt;-</span> <span class="fu">contar_primos</span>(M_C_transformada)</span>
+<span id="cb92-17"><a href="#cb92-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb92-18"><a href="#cb92-18" aria-hidden="true" tabindex="-1"></a>total_primos <span class="ot">&lt;-</span> iA <span class="sc">+</span> iB <span class="sc">+</span> iC</span>
+<span id="cb92-19"><a href="#cb92-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb92-20"><a href="#cb92-20" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"d) Contagem de números primos nas matrizes transformadas:</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>d) Contagem de números primos nas matrizes transformadas:</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Primos em A:"</span>, iA, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Primos em A: 0 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Primos em B:"</span>, iB, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Primos em B: 0 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb98"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb98-1"><a href="#cb98-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Primos em C:"</span>, iC, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Primos em C: 0 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb100"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb100-1"><a href="#cb100-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"   Contagem Total (A + B + C):"</span>, total_primos, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>   Contagem Total (A + B + C): 0 </code></pre>
+</div>
+</div>
+</section>
+<section id="section-2" class="level3">
+<h3 class="anchored" data-anchor-id="section-2">3)</h3>
+<p>O <em>Lago Baikal</em>, na Rússia, é famoso por sua abundância de nutrientes e por sua beleza natural, sendo lar da espécie de peixe Omul do Baikal (Coregonus migratorius). O lago pode suportar uma capacidade máxima de 5 × 105 peixes e apresenta uma taxa de reprodução basal de 6% ao dia.</p>
+<p>Essa taxa de reprodução varia de acordo com a temperatura média da estação do ano, conforme a Tabela 1. Além disso, o pH da água afeta o comportamento dos pescadores, que pescam diferentes porcentagens de peixes por dia, conforme a Tabela 2.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Estacao</th>
+<th>Temperatura</th>
+<th>FatorReproducao</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Pri</td>
+<td>0</td>
+<td>0.00</td>
+</tr>
+<tr class="even">
+<td>Ver</td>
+<td>20</td>
+<td>0.03</td>
+</tr>
+<tr class="odd">
+<td>Out</td>
+<td>10</td>
+<td>-0.03</td>
+</tr>
+<tr class="even">
+<td>Inv</td>
+<td>0</td>
+<td>-0.02</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>FaixaPH</th>
+<th>PercentualPescado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>6.0–6.5</td>
+<td>0.12</td>
+</tr>
+<tr class="even">
+<td>6.6–7.0</td>
+<td>0.20</td>
+</tr>
+<tr class="odd">
+<td>7.1–7.5</td>
+<td>0.05</td>
+</tr>
+<tr class="even">
+<td>7.6–8.0</td>
+<td>0.16</td>
+</tr>
+</tbody>
+</table>
+<p>No entanto, a pesca excessiva e a poluição têm afetado a população de peixes no lago. Hoje, têm-se 80 peixes no lago, e um programa de monitoramento foi implementado para avaliar o impacto dessas variáveis na população de peixes.</p>
+<section id="sua-tarefa" class="level4">
+<h4 class="anchored" data-anchor-id="sua-tarefa">Sua Tarefa</h4>
+<ol type="1">
+<li>Crie uma função chamada simular_lago que receba como entrada os seguintes parâmetros:</li>
+</ol>
+<ul>
+<li><p>dias: Número de dias do experimento.</p></li>
+<li><p>peixes_iniciais: Número inicial de peixes no lago.</p></li>
+<li><p>estacao: Estação do ano (Primavera, Verão, Outono ou Inverno).</p></li>
+<li><p>ph: pH médio da água durante o experimento.</p></li>
+</ul>
+<ol start="2" type="1">
+<li>A função deve calcular:</li>
+</ol>
+<ul>
+<li><p>O número de peixes no lago a cada dia.</p></li>
+<li><p>O número de dias até o lago atingir sua capacidade máxima ou o número final de peixes ao fim do período definido por dias.</p></li>
+</ul>
+<ol start="3" type="1">
+<li>Saída esperada:</li>
+</ol>
+<ul>
+<li>Um data frame com duas colunas: dias e peixes, onde dias é o número do dia e peixes é o número de peixes no lago naquele dia.</li>
+</ul>
+</section>
+<section id="fórmula" class="level4">
+<h4 class="anchored" data-anchor-id="fórmula">Fórmula</h4>
+<p>A cada dia, o número de peixes é calculado como:</p>
+<p>Peixes no próximo dia=Peixes atuais×(1+taxa de reprodução ajustada)−peixes pescados</p>
+<p>Onde:</p>
+<p>Taxa de reprodução ajustada:</p>
+<p>Taxa basal+fator de ajuste da Tabela 1.</p>
+<p>Peixes pescados:</p>
+<p>Peixes atuais×porcentagem de peixes pescados (Tabela 2).</p>
+<p>Observação: O número de peixes nunca pode exceder a capacidade máxima do lago, e o número máximo de dias que os pesquisadores irão quantificar os peixes é 1000 dias. Além disso, contagem de peixes é sempre um número inteiro, considere sempre arredondar para cima.</p>
+<ol type="a">
+<li><p>Durante a estação Verão e com pH médio da água de 6.6–7.0, após 16 dias, quantos peixes haverá no lago?</p></li>
+<li><p>Durante a estação Verão e com pH médio da água de 6.6–7.0, quantos dias são necessários para o lago atingir sua capacidade máxima?</p></li>
+<li><p>Durante a estação Outono e com pH médio da água de 6.0–6.5, após 87 dias, quantos peixes haverá no lago?</p></li>
+<li><p>Durante a estação Outono e com pH médio da água de 6.0–6.5, quantos dias são necessários para o lago atingir sua capacidade máxima?</p></li>
+</ol>
+<ul>
+<li><strong>Resolução</strong>:</li>
+</ul>
+<p><strong>Preparação dos dados</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb102"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb102-1"><a href="#cb102-1" aria-hidden="true" tabindex="-1"></a><span class="co"># --- CONSTANTES ---</span></span>
+<span id="cb102-2"><a href="#cb102-2" aria-hidden="true" tabindex="-1"></a>CAPACIDADE_MAXIMA <span class="ot">&lt;-</span> <span class="dv">500000</span></span>
+<span id="cb102-3"><a href="#cb102-3" aria-hidden="true" tabindex="-1"></a>TAXA_REPRODUCAO_BASAL <span class="ot">&lt;-</span> <span class="fl">0.06</span></span>
+<span id="cb102-4"><a href="#cb102-4" aria-hidden="true" tabindex="-1"></a>DIAS_MAXIMOS_SIMULACAO <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb102-5"><a href="#cb102-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb102-6"><a href="#cb102-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Tabela 1: Fatores de Reprodução por Estação</span></span>
+<span id="cb102-7"><a href="#cb102-7" aria-hidden="true" tabindex="-1"></a>df_reproducao <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb102-8"><a href="#cb102-8" aria-hidden="true" tabindex="-1"></a>  <span class="at">Estacao =</span> <span class="fu">c</span>(<span class="st">"Pri"</span>, <span class="st">"Ver"</span>, <span class="st">"Out"</span>, <span class="st">"Inv"</span>),</span>
+<span id="cb102-9"><a href="#cb102-9" aria-hidden="true" tabindex="-1"></a>  <span class="at">FatorReproducao =</span> <span class="fu">c</span>(<span class="fl">0.00</span>, <span class="fl">0.03</span>, <span class="sc">-</span><span class="fl">0.03</span>, <span class="sc">-</span><span class="fl">0.02</span>)</span>
+<span id="cb102-10"><a href="#cb102-10" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb102-11"><a href="#cb102-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb102-12"><a href="#cb102-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Tabela 2: Percentual Pescado por Faixa de pH</span></span>
+<span id="cb102-13"><a href="#cb102-13" aria-hidden="true" tabindex="-1"></a>df_pesca <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(</span>
+<span id="cb102-14"><a href="#cb102-14" aria-hidden="true" tabindex="-1"></a>  <span class="at">FaixaPH =</span> <span class="fu">c</span>(<span class="st">"6.0–6.5"</span>, <span class="st">"6.6–7.0"</span>, <span class="st">"7.1–7.5"</span>, <span class="st">"7.6–8.0"</span>),</span>
+<span id="cb102-15"><a href="#cb102-15" aria-hidden="true" tabindex="-1"></a>  <span class="at">PercentualPescado =</span> <span class="fu">c</span>(<span class="fl">0.12</span>, <span class="fl">0.20</span>, <span class="fl">0.05</span>, <span class="fl">0.16</span>)</span>
+<span id="cb102-16"><a href="#cb102-16" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb102-17"><a href="#cb102-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb102-18"><a href="#cb102-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Função auxiliar para buscar o Fator de Reprodução</span></span>
+<span id="cb102-19"><a href="#cb102-19" aria-hidden="true" tabindex="-1"></a>get_fator_reproducao <span class="ot">&lt;-</span> <span class="cf">function</span>(estacao) {</span>
+<span id="cb102-20"><a href="#cb102-20" aria-hidden="true" tabindex="-1"></a>  fator <span class="ot">&lt;-</span> df_reproducao<span class="sc">$</span>FatorReproducao[df_reproducao<span class="sc">$</span>Estacao <span class="sc">==</span> estacao]</span>
+<span id="cb102-21"><a href="#cb102-21" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(fator) <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">stop</span>(<span class="st">"Estação inválida."</span>)</span>
+<span id="cb102-22"><a href="#cb102-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(fator)</span>
+<span id="cb102-23"><a href="#cb102-23" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb102-24"><a href="#cb102-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb102-25"><a href="#cb102-25" aria-hidden="true" tabindex="-1"></a><span class="co"># Função auxiliar para buscar o Percentual Pescado</span></span>
+<span id="cb102-26"><a href="#cb102-26" aria-hidden="true" tabindex="-1"></a>get_percentual_pescado <span class="ot">&lt;-</span> <span class="cf">function</span>(ph_faixa) {</span>
+<span id="cb102-27"><a href="#cb102-27" aria-hidden="true" tabindex="-1"></a>  percentual <span class="ot">&lt;-</span> df_pesca<span class="sc">$</span>PercentualPescado[df_pesca<span class="sc">$</span>FaixaPH <span class="sc">==</span> ph_faixa]</span>
+<span id="cb102-28"><a href="#cb102-28" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">length</span>(percentual) <span class="sc">==</span> <span class="dv">0</span>) <span class="fu">stop</span>(<span class="st">"Faixa de pH inválida."</span>)</span>
+<span id="cb102-29"><a href="#cb102-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(percentual)</span>
+<span id="cb102-30"><a href="#cb102-30" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Função simular_lago</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb103"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb103-1"><a href="#cb103-1" aria-hidden="true" tabindex="-1"></a>simular_lago <span class="ot">&lt;-</span> <span class="cf">function</span>(dias, peixes_iniciais, estacao, ph) {</span>
+<span id="cb103-2"><a href="#cb103-2" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb103-3"><a href="#cb103-3" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 1. Configurações e Lookups</span></span>
+<span id="cb103-4"><a href="#cb103-4" aria-hidden="true" tabindex="-1"></a>  dias_simulacao <span class="ot">&lt;-</span> <span class="fu">min</span>(dias, DIAS_MAXIMOS_SIMULACAO)</span>
+<span id="cb103-5"><a href="#cb103-5" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb103-6"><a href="#cb103-6" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Taxa de reprodução ajustada</span></span>
+<span id="cb103-7"><a href="#cb103-7" aria-hidden="true" tabindex="-1"></a>  fator_repro_ajuste <span class="ot">&lt;-</span> <span class="fu">get_fator_reproducao</span>(estacao)</span>
+<span id="cb103-8"><a href="#cb103-8" aria-hidden="true" tabindex="-1"></a>  taxa_repro_ajustada <span class="ot">&lt;-</span> TAXA_REPRODUCAO_BASAL <span class="sc">+</span> fator_repro_ajuste</span>
+<span id="cb103-9"><a href="#cb103-9" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb103-10"><a href="#cb103-10" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Percentual de pesca</span></span>
+<span id="cb103-11"><a href="#cb103-11" aria-hidden="true" tabindex="-1"></a>  percentual_pescado <span class="ot">&lt;-</span> <span class="fu">get_percentual_pescado</span>(ph)</span>
+<span id="cb103-12"><a href="#cb103-12" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb103-13"><a href="#cb103-13" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Inicialização do rastreamento</span></span>
+<span id="cb103-14"><a href="#cb103-14" aria-hidden="true" tabindex="-1"></a>  populacao <span class="ot">&lt;-</span> peixes_iniciais</span>
+<span id="cb103-15"><a href="#cb103-15" aria-hidden="true" tabindex="-1"></a>  historico <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">dias =</span> <span class="dv">0</span>, <span class="at">peixes =</span> peixes_iniciais)</span>
+<span id="cb103-16"><a href="#cb103-16" aria-hidden="true" tabindex="-1"></a>  dias_para_capacidade <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb103-17"><a href="#cb103-17" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb103-18"><a href="#cb103-18" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 2. Simulação Dia a Dia</span></span>
+<span id="cb103-19"><a href="#cb103-19" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (dia <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>dias_simulacao) {</span>
+<span id="cb103-20"><a href="#cb103-20" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb103-21"><a href="#cb103-21" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Peixes pescados (sempre baseados nos peixes atuais)</span></span>
+<span id="cb103-22"><a href="#cb103-22" aria-hidden="true" tabindex="-1"></a>    peixes_pescados <span class="ot">&lt;-</span> populacao <span class="sc">*</span> percentual_pescado</span>
+<span id="cb103-23"><a href="#cb103-23" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb103-24"><a href="#cb103-24" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Fórmula: Peixes * (1 + Taxa) - Pescados</span></span>
+<span id="cb103-25"><a href="#cb103-25" aria-hidden="true" tabindex="-1"></a>    proxima_populacao <span class="ot">&lt;-</span> populacao <span class="sc">*</span> (<span class="dv">1</span> <span class="sc">+</span> taxa_repro_ajustada) <span class="sc">-</span> peixes_pescados</span>
+<span id="cb103-26"><a href="#cb103-26" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb103-27"><a href="#cb103-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Regra: Contagem de peixes é sempre um número inteiro, arredonda para cima</span></span>
+<span id="cb103-28"><a href="#cb103-28" aria-hidden="true" tabindex="-1"></a>    proxima_populacao <span class="ot">&lt;-</span> <span class="fu">ceiling</span>(proxima_populacao)</span>
+<span id="cb103-29"><a href="#cb103-29" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb103-30"><a href="#cb103-30" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Regra: População nunca pode exceder a capacidade máxima</span></span>
+<span id="cb103-31"><a href="#cb103-31" aria-hidden="true" tabindex="-1"></a>    populacao <span class="ot">&lt;-</span> <span class="fu">min</span>(proxima_populacao, CAPACIDADE_MAXIMA)</span>
+<span id="cb103-32"><a href="#cb103-32" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb103-33"><a href="#cb103-33" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Rastreamento</span></span>
+<span id="cb103-34"><a href="#cb103-34" aria-hidden="true" tabindex="-1"></a>    historico <span class="ot">&lt;-</span> <span class="fu">rbind</span>(historico, <span class="fu">data.frame</span>(<span class="at">dias =</span> dia, <span class="at">peixes =</span> populacao))</span>
+<span id="cb103-35"><a href="#cb103-35" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb103-36"><a href="#cb103-36" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Verifica se atingiu a capacidade máxima PELA PRIMEIRA VEZ</span></span>
+<span id="cb103-37"><a href="#cb103-37" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="fu">is.na</span>(dias_para_capacidade) <span class="sc">&amp;&amp;</span> populacao <span class="sc">==</span> CAPACIDADE_MAXIMA) {</span>
+<span id="cb103-38"><a href="#cb103-38" aria-hidden="true" tabindex="-1"></a>      dias_para_capacidade <span class="ot">&lt;-</span> dia</span>
+<span id="cb103-39"><a href="#cb103-39" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb103-40"><a href="#cb103-40" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb103-41"><a href="#cb103-41" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Se atingiu a capacidade, para a simulação (otimização)</span></span>
+<span id="cb103-42"><a href="#cb103-42" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (populacao <span class="sc">==</span> CAPACIDADE_MAXIMA <span class="sc">&amp;&amp;</span> dia <span class="sc">&lt;</span> dias) <span class="cf">break</span></span>
+<span id="cb103-43"><a href="#cb103-43" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb103-44"><a href="#cb103-44" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Se a população atingiu zero (ou negativo, embora o ceiling minimize isso)</span></span>
+<span id="cb103-45"><a href="#cb103-45" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (populacao <span class="sc">&lt;=</span> <span class="dv">0</span>) {</span>
+<span id="cb103-46"><a href="#cb103-46" aria-hidden="true" tabindex="-1"></a>        populacao <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb103-47"><a href="#cb103-47" aria-hidden="true" tabindex="-1"></a>        historico[<span class="fu">nrow</span>(historico), <span class="st">"peixes"</span>] <span class="ot">&lt;-</span> <span class="dv">0</span> <span class="co"># Garante que o último registro seja 0</span></span>
+<span id="cb103-48"><a href="#cb103-48" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span>
+<span id="cb103-49"><a href="#cb103-49" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb103-50"><a href="#cb103-50" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb103-51"><a href="#cb103-51" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb103-52"><a href="#cb103-52" aria-hidden="true" tabindex="-1"></a>  <span class="co"># 3. Retorno da Função</span></span>
+<span id="cb103-53"><a href="#cb103-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">list</span>(</span>
+<span id="cb103-54"><a href="#cb103-54" aria-hidden="true" tabindex="-1"></a>    <span class="at">historico =</span> historico,</span>
+<span id="cb103-55"><a href="#cb103-55" aria-hidden="true" tabindex="-1"></a>    <span class="at">dias_para_capacidade =</span> dias_para_capacidade,</span>
+<span id="cb103-56"><a href="#cb103-56" aria-hidden="true" tabindex="-1"></a>    <span class="at">peixes_finais =</span> populacao</span>
+<span id="cb103-57"><a href="#cb103-57" aria-hidden="true" tabindex="-1"></a>  ))</span>
+<span id="cb103-58"><a href="#cb103-58" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ul>
+<li><ol type="a">
+<li>e b) Estação Verão e pH 6.6–7.0 (Iniciais: 80 peixes)</li>
+</ol></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb104"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb104-1"><a href="#cb104-1" aria-hidden="true" tabindex="-1"></a>peixes_iniciais <span class="ot">&lt;-</span> <span class="dv">80</span></span>
+<span id="cb104-2"><a href="#cb104-2" aria-hidden="true" tabindex="-1"></a>estacao_verao <span class="ot">&lt;-</span> <span class="st">"Ver"</span></span>
+<span id="cb104-3"><a href="#cb104-3" aria-hidden="true" tabindex="-1"></a>ph_faixa_6_6_7_0 <span class="ot">&lt;-</span> <span class="st">"6.6–7.0"</span></span>
+<span id="cb104-4"><a href="#cb104-4" aria-hidden="true" tabindex="-1"></a>dias_a <span class="ot">&lt;-</span> <span class="dv">16</span></span>
+<span id="cb104-5"><a href="#cb104-5" aria-hidden="true" tabindex="-1"></a>dias_b <span class="ot">&lt;-</span> <span class="dv">1000</span> <span class="co"># Usamos o máximo de 1000 dias para buscar a capacidade</span></span>
+<span id="cb104-6"><a href="#cb104-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb104-7"><a href="#cb104-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Resolução a)</span></span>
+<span id="cb104-8"><a href="#cb104-8" aria-hidden="true" tabindex="-1"></a>res_a <span class="ot">&lt;-</span> <span class="fu">simular_lago</span>(<span class="at">dias =</span> dias_a, <span class="at">peixes_iniciais =</span> peixes_iniciais, <span class="at">estacao =</span> estacao_verao, <span class="at">ph =</span> ph_faixa_6_6_7_0)</span>
+<span id="cb104-9"><a href="#cb104-9" aria-hidden="true" tabindex="-1"></a>peixes_apos_16_dias <span class="ot">&lt;-</span> res_a<span class="sc">$</span>historico<span class="sc">$</span>peixes[res_a<span class="sc">$</span>historico<span class="sc">$</span>dias <span class="sc">==</span> dias_a]</span>
+<span id="cb104-10"><a href="#cb104-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb104-11"><a href="#cb104-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Resolução b)</span></span>
+<span id="cb104-12"><a href="#cb104-12" aria-hidden="true" tabindex="-1"></a>res_b <span class="ot">&lt;-</span> <span class="fu">simular_lago</span>(<span class="at">dias =</span> dias_b, <span class="at">peixes_iniciais =</span> peixes_iniciais, <span class="at">estacao =</span> estacao_verao, <span class="at">ph =</span> ph_faixa_6_6_7_0)</span>
+<span id="cb104-13"><a href="#cb104-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb104-14"><a href="#cb104-14" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"a) Peixes após 16 dias (Verão, pH 6.6–7.0):"</span>, peixes_apos_16_dias, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a) Peixes após 16 dias (Verão, pH 6.6–7.0): 16 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb106"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb106-1"><a href="#cb106-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"b) Dias para atingir a capacidade máxima (Verão, pH 6.6–7.0):"</span>, </span>
+<span id="cb106-2"><a href="#cb106-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ifelse</span>(<span class="fu">is.na</span>(res_b<span class="sc">$</span>dias_para_capacidade), </span>
+<span id="cb106-3"><a href="#cb106-3" aria-hidden="true" tabindex="-1"></a>           <span class="st">"Não atingiu em 1000 dias"</span>, res_b<span class="sc">$</span>dias_para_capacidade), <span class="st">"</span><span class="sc">\n\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>b) Dias para atingir a capacidade máxima (Verão, pH 6.6–7.0): Não atingiu em 1000 dias </code></pre>
+</div>
+</div>
+<ol start="3" type="a">
+<li>e d) Estação Outono e pH 6.0–6.5 (Iniciais: 80 peixes)</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb108"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb108-1"><a href="#cb108-1" aria-hidden="true" tabindex="-1"></a>peixes_iniciais <span class="ot">&lt;-</span> <span class="dv">80</span></span>
+<span id="cb108-2"><a href="#cb108-2" aria-hidden="true" tabindex="-1"></a>estacao_outono <span class="ot">&lt;-</span> <span class="st">"Out"</span></span>
+<span id="cb108-3"><a href="#cb108-3" aria-hidden="true" tabindex="-1"></a>ph_faixa_6_0_6_5 <span class="ot">&lt;-</span> <span class="st">"6.0–6.5"</span></span>
+<span id="cb108-4"><a href="#cb108-4" aria-hidden="true" tabindex="-1"></a>dias_c <span class="ot">&lt;-</span> <span class="dv">87</span></span>
+<span id="cb108-5"><a href="#cb108-5" aria-hidden="true" tabindex="-1"></a>dias_d <span class="ot">&lt;-</span> <span class="dv">1000</span></span>
+<span id="cb108-6"><a href="#cb108-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb108-7"><a href="#cb108-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Resolução c)</span></span>
+<span id="cb108-8"><a href="#cb108-8" aria-hidden="true" tabindex="-1"></a>res_c <span class="ot">&lt;-</span> <span class="fu">simular_lago</span>(<span class="at">dias =</span> dias_c, <span class="at">peixes_iniciais =</span> peixes_iniciais, <span class="at">estacao =</span> estacao_outono, <span class="at">ph =</span> ph_faixa_6_0_6_5)</span>
+<span id="cb108-9"><a href="#cb108-9" aria-hidden="true" tabindex="-1"></a>peixes_apos_87_dias <span class="ot">&lt;-</span> res_c<span class="sc">$</span>historico<span class="sc">$</span>peixes[res_c<span class="sc">$</span>historico<span class="sc">$</span>dias <span class="sc">==</span> dias_c]</span>
+<span id="cb108-10"><a href="#cb108-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb108-11"><a href="#cb108-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Resolução d)</span></span>
+<span id="cb108-12"><a href="#cb108-12" aria-hidden="true" tabindex="-1"></a>res_d <span class="ot">&lt;-</span> <span class="fu">simular_lago</span>(<span class="at">dias =</span> dias_d, <span class="at">peixes_iniciais =</span> peixes_iniciais, <span class="at">estacao =</span> estacao_outono, <span class="at">ph =</span> ph_faixa_6_0_6_5)</span>
+<span id="cb108-13"><a href="#cb108-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb108-14"><a href="#cb108-14" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"c) Peixes após 87 dias (Outono, pH 6.0–6.5):"</span>, peixes_apos_87_dias, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>c) Peixes após 87 dias (Outono, pH 6.0–6.5): 11 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb110"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb110-1"><a href="#cb110-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"d) Dias para atingir a capacidade máxima (Outono, pH 6.0–6.5):"</span>, </span>
+<span id="cb110-2"><a href="#cb110-2" aria-hidden="true" tabindex="-1"></a>    <span class="fu">ifelse</span>(<span class="fu">is.na</span>(res_d<span class="sc">$</span>dias_para_capacidade), </span>
+<span id="cb110-3"><a href="#cb110-3" aria-hidden="true" tabindex="-1"></a>           <span class="st">"Não atingiu em 1000 dias"</span>, res_d<span class="sc">$</span>dias_para_capacidade), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>d) Dias para atingir a capacidade máxima (Outono, pH 6.0–6.5): Não atingiu em 1000 dias </code></pre>
+</div>
+</div>
+</section>
+</section>
+</section>
+<section id="prova-final" class="level1">
+<h1>Prova Final</h1>
+<section id="questão-1" class="level2">
+<h2 class="anchored" data-anchor-id="questão-1">Questão 1</h2>
+<p>Considere as notas dos instrumentos de uma orquestra descritas no vetor numérico nomeado em Notas e os instrumentos que atingiram o limite de volume descritos no vetor lógico nomeado em LimiteVolume:</p>
+<section id="notas" class="level4">
+<h4 class="anchored" data-anchor-id="notas">Notas</h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb112"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb112-1"><a href="#cb112-1" aria-hidden="true" tabindex="-1"></a>Notas <span class="ot">&lt;-</span> <span class="fu">data.frame</span>(<span class="at">Instrumento =</span> <span class="fu">c</span>(<span class="st">"Violino"</span>, <span class="st">"Viola"</span>, <span class="st">"Violoncelo"</span>, <span class="st">"Contrabaixo"</span>, <span class="st">"Flauta"</span>, <span class="st">"Clarinete"</span>, <span class="st">"Oboé"</span>, <span class="st">"Trompete"</span>, <span class="st">"Trombone"</span>, <span class="st">"Percussão"</span>),</span>
+<span id="cb112-2"><a href="#cb112-2" aria-hidden="true" tabindex="-1"></a>                    <span class="at">Notas =</span> <span class="fu">c</span>(<span class="dv">56</span>, <span class="dv">59</span>, <span class="dv">76</span>, <span class="dv">38</span>, <span class="dv">50</span>, <span class="dv">37</span>, <span class="dv">62</span>, <span class="dv">93</span>, <span class="dv">62</span>, <span class="dv">52</span>),</span>
+<span id="cb112-3"><a href="#cb112-3" aria-hidden="true" tabindex="-1"></a>                    <span class="at">Limite_Volume =</span> <span class="fu">c</span>(<span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">FALSE</span>, <span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">TRUE</span>, <span class="cn">FALSE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol type="a">
+<li>A raiz quadrada da média das notas dos instrumentos é:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb113"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb113-1"><a href="#cb113-1" aria-hidden="true" tabindex="-1"></a>raiz_quadrada_media <span class="ot">&lt;-</span> <span class="fu">sqrt</span>(<span class="fu">mean</span>(Notas<span class="sc">$</span>Notas))</span>
+<span id="cb113-2"><a href="#cb113-2" aria-hidden="true" tabindex="-1"></a>raiz_quadrada_media</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 7.648529</code></pre>
+</div>
+</div>
+<ol start="2" type="a">
+<li>A mediana das notas dos instrumentos que atingiram o limite de volume é:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb115"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb115-1"><a href="#cb115-1" aria-hidden="true" tabindex="-1"></a>notas_limite_true <span class="ot">&lt;-</span> Notas[Notas<span class="sc">$</span>Limite_Volume <span class="sc">==</span> <span class="cn">TRUE</span>, <span class="st">"Notas"</span>]</span>
+<span id="cb115-2"><a href="#cb115-2" aria-hidden="true" tabindex="-1"></a>mediana_limite_true <span class="ot">&lt;-</span> <span class="fu">median</span>(notas_limite_true)</span>
+<span id="cb115-3"><a href="#cb115-3" aria-hidden="true" tabindex="-1"></a>mediana_limite_true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 69</code></pre>
+</div>
+</div>
+<ol start="3" type="a">
+<li>A maior nota entre os instrumentos que não atingiram o limite de volume é:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb117"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb117-1"><a href="#cb117-1" aria-hidden="true" tabindex="-1"></a>notas_limite_false <span class="ot">&lt;-</span> Notas[Notas<span class="sc">$</span>Limite_Volume <span class="sc">==</span> <span class="cn">FALSE</span>, <span class="st">"Notas"</span>]</span>
+<span id="cb117-2"><a href="#cb117-2" aria-hidden="true" tabindex="-1"></a>maior_nota_limite_false <span class="ot">&lt;-</span> <span class="fu">max</span>(notas_limite_false)</span>
+<span id="cb117-3"><a href="#cb117-3" aria-hidden="true" tabindex="-1"></a>maior_nota_limite_false</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 59</code></pre>
+</div>
+</div>
+<ol start="4" type="a">
+<li>Considerando que instrumentos com nota entre 40 e 69 precisam de ajustes, o número de instrumentos que precisam de ajustes e atingiram o limite de volume é:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb119"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb119-1"><a href="#cb119-1" aria-hidden="true" tabindex="-1"></a>ajuste_e_limite <span class="ot">&lt;-</span> Notas[Notas<span class="sc">$</span>Notas <span class="sc">&gt;=</span> <span class="dv">40</span> <span class="sc">&amp;</span> Notas<span class="sc">$</span>Notas <span class="sc">&lt;=</span> <span class="dv">69</span> <span class="sc">&amp;</span> Notas<span class="sc">$</span>Limite_Volume <span class="sc">==</span> <span class="cn">TRUE</span>, ]</span>
+<span id="cb119-2"><a href="#cb119-2" aria-hidden="true" tabindex="-1"></a>numero_ajuste_e_limite <span class="ot">&lt;-</span> <span class="fu">nrow</span>(ajuste_e_limite)</span>
+<span id="cb119-3"><a href="#cb119-3" aria-hidden="true" tabindex="-1"></a>numero_ajuste_e_limite</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 2</code></pre>
+</div>
+</div>
+<ol start="5" type="a">
+<li>O desvio-padrão das notas dos instrumentos que atingiram o limite de volume é:</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb121"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb121-1"><a href="#cb121-1" aria-hidden="true" tabindex="-1"></a>dp_limite_true <span class="ot">&lt;-</span> <span class="fu">sd</span>(notas_limite_true)</span>
+<span id="cb121-2"><a href="#cb121-2" aria-hidden="true" tabindex="-1"></a>dp_limite_true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>[1] 14.72809</code></pre>
+</div>
+</div>
+<p><strong>Respostas</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb123"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb123-1"><a href="#cb123-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"a) Raiz quadrada da média das notas:"</span>, <span class="fu">round</span>(raiz_quadrada_media, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>a) Raiz quadrada da média das notas: 7.6485 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb125"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb125-1"><a href="#cb125-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"b) Mediana das notas com limite de volume TRUE:"</span>, mediana_limite_true, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>b) Mediana das notas com limite de volume TRUE: 69 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb127"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb127-1"><a href="#cb127-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"c) Maior nota sem limite de volume:"</span>, maior_nota_limite_false, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>c) Maior nota sem limite de volume: 59 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb129"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb129-1"><a href="#cb129-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"d) Número de instrumentos com ajuste E limite de volume TRUE:"</span>, numero_ajuste_e_limite, <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>d) Número de instrumentos com ajuste E limite de volume TRUE: 2 </code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb131"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb131-1"><a href="#cb131-1" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(<span class="st">"e) Desvio-padrão das notas com limite de volume TRUE:"</span>, <span class="fu">round</span>(dp_limite_true, <span class="dv">4</span>), <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>e) Desvio-padrão das notas com limite de volume TRUE: 14.7281 </code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="questão-2" class="level2">
+<h2 class="anchored" data-anchor-id="questão-2">Questão 2</h2>
+<p>Um entusiasta gastronômico está em uma jornada para explorar restaurantes listados no guia Michelin. O viajante começou sua aventura no Restaurante Per Se em New York, USA. Após saborear as delícias do restaurante, ele segue para a cidade mais próxima que abriga um restaurante reconhecido no guia Michelin.</p>
+<p>Para calcular a distância entre os restaurantes, utilizaremos a equação de Haversine, uma fórmula eficaz para medir distâncias entre pontos de latitude e longitude na superfície esférica da Terra.</p>
+<p>A equação de Haversine para calcular a distância (d) entre dois pontos na superfície de uma esfera (como a Terra) a partir das coordenadas de latitude, em radianos, (φ1, φ1) e longitude (λ1, λ2) é dada por</p>
+<p><span class="math display">\[
+d=2⋅rarcsin((sin2(φ2−φ12)+cosφ1⋅cosφ2⋅sin2(λ2−λ12)^(1/2))
+\]</span></p>
+<p>em que r é o raio da Terra (aproximadamente 6,371 km). Neste contexto, responda as questões a seguir.</p>
+<p>Dica: Implemente a função haversine_distance para calcular a distância entre dois pontos na superfície da Terra. Verifique a necessidade de converter as coordenadas de latitude e longitude para radianos.</p>
+<p>Utilize o banco de dados michelin.csv para obter as informações necessárias.</p>
+<p>Quantos quilômetros o entusiasta precisa viajar para visitar o próximo restaurante com 1 Star ?</p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb133"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb133-1"><a href="#cb133-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Carrega as bibliotecas necessárias</span></span>
+<span id="cb133-2"><a href="#cb133-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("dplyr") # Descomente para instalar se necessário</span></span>
+<span id="cb133-3"><a href="#cb133-3" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span>
+<span id="cb133-4"><a href="#cb133-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb133-5"><a href="#cb133-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Definição da constante do raio da Terra (em km)</span></span>
+<span id="cb133-6"><a href="#cb133-6" aria-hidden="true" tabindex="-1"></a>R <span class="ot">&lt;-</span> <span class="dv">6371</span></span>
+<span id="cb133-7"><a href="#cb133-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb133-8"><a href="#cb133-8" aria-hidden="true" tabindex="-1"></a><span class="co"># 2. Implementação da função Haversine</span></span>
+<span id="cb133-9"><a href="#cb133-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Coordenadas devem ser passadas em graus</span></span>
+<span id="cb133-10"><a href="#cb133-10" aria-hidden="true" tabindex="-1"></a>haversine_distance <span class="ot">&lt;-</span> <span class="cf">function</span>(lat1, lon1, lat2, lon2) {</span>
+<span id="cb133-11"><a href="#cb133-11" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Converte graus para radianos</span></span>
+<span id="cb133-12"><a href="#cb133-12" aria-hidden="true" tabindex="-1"></a>  rad <span class="ot">&lt;-</span> <span class="cf">function</span>(deg) { deg <span class="sc">*</span> pi <span class="sc">/</span> <span class="dv">180</span> }</span>
+<span id="cb133-13"><a href="#cb133-13" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb133-14"><a href="#cb133-14" aria-hidden="true" tabindex="-1"></a>  phi1 <span class="ot">&lt;-</span> <span class="fu">rad</span>(lat1)</span>
+<span id="cb133-15"><a href="#cb133-15" aria-hidden="true" tabindex="-1"></a>  phi2 <span class="ot">&lt;-</span> <span class="fu">rad</span>(lat2)</span>
+<span id="cb133-16"><a href="#cb133-16" aria-hidden="true" tabindex="-1"></a>  lambda1 <span class="ot">&lt;-</span> <span class="fu">rad</span>(lon1)</span>
+<span id="cb133-17"><a href="#cb133-17" aria-hidden="true" tabindex="-1"></a>  lambda2 <span class="ot">&lt;-</span> <span class="fu">rad</span>(lon2)</span>
+<span id="cb133-18"><a href="#cb133-18" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb133-19"><a href="#cb133-19" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Diferenças</span></span>
+<span id="cb133-20"><a href="#cb133-20" aria-hidden="true" tabindex="-1"></a>  d_phi <span class="ot">&lt;-</span> phi2 <span class="sc">-</span> phi1</span>
+<span id="cb133-21"><a href="#cb133-21" aria-hidden="true" tabindex="-1"></a>  d_lambda <span class="ot">&lt;-</span> lambda2 <span class="sc">-</span> lambda1</span>
+<span id="cb133-22"><a href="#cb133-22" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb133-23"><a href="#cb133-23" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Fórmula de Haversine</span></span>
+<span id="cb133-24"><a href="#cb133-24" aria-hidden="true" tabindex="-1"></a>  a <span class="ot">&lt;-</span> <span class="fu">sin</span>(d_phi <span class="sc">/</span> <span class="dv">2</span>)<span class="sc">^</span><span class="dv">2</span> <span class="sc">+</span> <span class="fu">cos</span>(phi1) <span class="sc">*</span> <span class="fu">cos</span>(phi2) <span class="sc">*</span> <span class="fu">sin</span>(d_lambda <span class="sc">/</span> <span class="dv">2</span>)<span class="sc">^</span><span class="dv">2</span></span>
+<span id="cb133-25"><a href="#cb133-25" aria-hidden="true" tabindex="-1"></a>  d <span class="ot">&lt;-</span> <span class="dv">2</span> <span class="sc">*</span> R <span class="sc">*</span> <span class="fu">asin</span>(<span class="fu">sqrt</span>(a))</span>
+<span id="cb133-26"><a href="#cb133-26" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb133-27"><a href="#cb133-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(d)</span>
+<span id="cb133-28"><a href="#cb133-28" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb133-29"><a href="#cb133-29" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb133-30"><a href="#cb133-30" aria-hidden="true" tabindex="-1"></a><span class="co"># 3. Carregamento dos dados (Assumindo que michelin.csv está no diretório de trabalho)</span></span>
+<span id="cb133-31"><a href="#cb133-31" aria-hidden="true" tabindex="-1"></a><span class="co"># df_michelin &lt;- read.csv("michelin.csv")</span></span>
+<span id="cb133-32"><a href="#cb133-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb133-33"><a href="#cb133-33" aria-hidden="true" tabindex="-1"></a><span class="co"># 4. Localiza o restaurante de partida ('Per Se')</span></span>
+<span id="cb133-34"><a href="#cb133-34" aria-hidden="true" tabindex="-1"></a><span class="co"># per_se &lt;- df_michelin %&gt;% filter(name == "Per Se", city == "New York", country == "USA")</span></span>
+<span id="cb133-35"><a href="#cb133-35" aria-hidden="true" tabindex="-1"></a><span class="co"># lat_per_se &lt;- per_se$latitude[1]</span></span>
+<span id="cb133-36"><a href="#cb133-36" aria-hidden="true" tabindex="-1"></a><span class="co"># lon_per_se &lt;- per_se$longitude[1]</span></span>
+<span id="cb133-37"><a href="#cb133-37" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb133-38"><a href="#cb133-38" aria-hidden="true" tabindex="-1"></a><span class="co"># 5. Filtra restaurantes com exatamente '1 Star'</span></span>
+<span id="cb133-39"><a href="#cb133-39" aria-hidden="true" tabindex="-1"></a><span class="co"># df_one_star &lt;- df_michelin %&gt;% filter(stars == "1 Star")</span></span>
+<span id="cb133-40"><a href="#cb133-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb133-41"><a href="#cb133-41" aria-hidden="true" tabindex="-1"></a><span class="co"># 6. Calcula a distância de 'Per Se' para todos os restaurantes '1 Star'</span></span>
+<span id="cb133-42"><a href="#cb133-42" aria-hidden="true" tabindex="-1"></a><span class="co"># distancias &lt;- df_one_star %&gt;%</span></span>
+<span id="cb133-43"><a href="#cb133-43" aria-hidden="true" tabindex="-1"></a><span class="co">#   rowwise() %&gt;%</span></span>
+<span id="cb133-44"><a href="#cb133-44" aria-hidden="true" tabindex="-1"></a><span class="co">#   mutate(</span></span>
+<span id="cb133-45"><a href="#cb133-45" aria-hidden="true" tabindex="-1"></a><span class="co">#     dist_km = haversine_distance(lat_per_se, lon_per_se, latitude, longitude)</span></span>
+<span id="cb133-46"><a href="#cb133-46" aria-hidden="true" tabindex="-1"></a><span class="co">#   ) %&gt;%</span></span>
+<span id="cb133-47"><a href="#cb133-47" aria-hidden="true" tabindex="-1"></a><span class="co">#   ungroup()</span></span>
+<span id="cb133-48"><a href="#cb133-48" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb133-49"><a href="#cb133-49" aria-hidden="true" tabindex="-1"></a><span class="co"># 7. Encontra a distância mínima (e remove a distância de Per Se para ele mesmo, se estiver na lista)</span></span>
+<span id="cb133-50"><a href="#cb133-50" aria-hidden="true" tabindex="-1"></a><span class="co"># min_distance &lt;- distancias %&gt;%</span></span>
+<span id="cb133-51"><a href="#cb133-51" aria-hidden="true" tabindex="-1"></a><span class="co">#   filter(dist_km &gt; 0.1) %&gt;% # Filtra distâncias muito pequenas (para não considerar o próprio restaurante)</span></span>
+<span id="cb133-52"><a href="#cb133-52" aria-hidden="true" tabindex="-1"></a><span class="co">#   summarise(min_dist = min(dist_km)) %&gt;%</span></span>
+<span id="cb133-53"><a href="#cb133-53" aria-hidden="true" tabindex="-1"></a><span class="co">#   pull(min_dist)</span></span>
+<span id="cb133-54"><a href="#cb133-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb133-55"><a href="#cb133-55" aria-hidden="true" tabindex="-1"></a><span class="co"># cat("Distância mínima para o próximo restaurante 1 Star:", round(min_distance, 2), "km\n")</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="questão-3" class="level2">
+<h2 class="anchored" data-anchor-id="questão-3">Questão 3</h2>
+<p>Considere os bancos de dados BoardGames1 e BoardGames2 para responder as questões que seguem. Os bancos apresentam uma série de informações sobre jogos de tabuleiro.</p>
+<p><strong>Preparação dos dados</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb134"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb134-1"><a href="#cb134-1" aria-hidden="true" tabindex="-1"></a><span class="co">#library(dplyr)</span></span>
+<span id="cb134-2"><a href="#cb134-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("stringr")</span></span>
+<span id="cb134-3"><a href="#cb134-3" aria-hidden="true" tabindex="-1"></a><span class="co">#library(stringr)</span></span>
+<span id="cb134-4"><a href="#cb134-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb134-5"><a href="#cb134-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 1. Carregar e Combinar os Dados (ASSUME ARQUIVOS .csv)</span></span>
+<span id="cb134-6"><a href="#cb134-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Mude para o caminho correto se necessário</span></span>
+<span id="cb134-7"><a href="#cb134-7" aria-hidden="true" tabindex="-1"></a><span class="co">#tryCatch({</span></span>
+<span id="cb134-8"><a href="#cb134-8" aria-hidden="true" tabindex="-1"></a><span class="co">#    df1 &lt;- read.csv("BoardGames1.csv")</span></span>
+<span id="cb134-9"><a href="#cb134-9" aria-hidden="true" tabindex="-1"></a><span class="co">#    df2 &lt;- read.csv("BoardGames2.csv")</span></span>
+<span id="cb134-10"><a href="#cb134-10" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_boardgames &lt;- bind_rows(df1, df2)</span></span>
+<span id="cb134-11"><a href="#cb134-11" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb134-12"><a href="#cb134-12" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Garantir que as colunas numéricas estão corretas</span></span>
+<span id="cb134-13"><a href="#cb134-13" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_boardgames$average &lt;- as.numeric(df_boardgames$average)</span></span>
+<span id="cb134-14"><a href="#cb134-14" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_boardgames$yearpublished &lt;- as.integer(df_boardgames$yearpublished)</span></span>
+<span id="cb134-15"><a href="#cb134-15" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_boardgames$maxplayers &lt;- as.integer(df_boardgames$maxplayers)</span></span>
+<span id="cb134-16"><a href="#cb134-16" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_boardgames$minplaytime &lt;- as.integer(df_boardgames$minplaytime)</span></span>
+<span id="cb134-17"><a href="#cb134-17" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_boardgames$users_rated &lt;- as.integer(df_boardgames$users_rated)</span></span>
+<span id="cb134-18"><a href="#cb134-18" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_boardgames$maxplaytime &lt;- as.integer(df_boardgames$maxplaytime)</span></span>
+<span id="cb134-19"><a href="#cb134-19" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_boardgames$minage &lt;- as.integer(df_boardgames$minage)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p>Importante: Ao incluir respostas do tipo string, certifique-se de que a mesma corresponde exatamente ao que está contido nos bancos de dados. Caso contrário, o sistema vai considerar que sua resposta está incorreta.</p>
+<ol type="a">
+<li>Dentre os jogos cujo nome (name) contém exatamente 2 palavras, quantos possuem nota média (average) maior que 7.5?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb135"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb135-1"><a href="#cb135-1" aria-hidden="true" tabindex="-1"></a><span class="co">#q3_a &lt;- df_boardgames %&gt;%</span></span>
+<span id="cb135-2"><a href="#cb135-2" aria-hidden="true" tabindex="-1"></a><span class="co">#        mutate(num_palavras = str_count(name, "\\S+")) %&gt;%</span></span>
+<span id="cb135-3"><a href="#cb135-3" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(num_palavras == 2, average &gt; 7.5) %&gt;%</span></span>
+<span id="cb135-4"><a href="#cb135-4" aria-hidden="true" tabindex="-1"></a><span class="co">#        nrow()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="2" type="a">
+<li>Quantos jogos possuem o sinal de exclamação na descrição (description)? Considere apenas os jogos lançados após 2010 (yearpublished).</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb136"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb136-1"><a href="#cb136-1" aria-hidden="true" tabindex="-1"></a><span class="co">#q3_b &lt;- df_boardgames %&gt;%</span></span>
+<span id="cb136-2"><a href="#cb136-2" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(yearpublished &gt; 2010, str_detect(description, "\\!")) %&gt;%</span></span>
+<span id="cb136-3"><a href="#cb136-3" aria-hidden="true" tabindex="-1"></a><span class="co">#        nrow()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="3" type="a">
+<li>Considere os jogos que admitem no máximo 12 jogadores(as) (maxplayers) e que possuem tempo mínimo de jogo (minplaytime) superior a 70. Dentre estes, quantos não contém a letra K no nome (name)?</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb137"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb137-1"><a href="#cb137-1" aria-hidden="true" tabindex="-1"></a><span class="co">#q3_c &lt;- df_boardgames %&gt;%</span></span>
+<span id="cb137-2"><a href="#cb137-2" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(maxplayers &lt;= 12, </span></span>
+<span id="cb137-3"><a href="#cb137-3" aria-hidden="true" tabindex="-1"></a><span class="co">#               minplaytime &gt; 70,</span></span>
+<span id="cb137-4"><a href="#cb137-4" aria-hidden="true" tabindex="-1"></a><span class="co">#               !str_detect(name, "[Kk]")) %&gt;% # Busca por 'K' ou 'k'</span></span>
+<span id="cb137-5"><a href="#cb137-5" aria-hidden="true" tabindex="-1"></a><span class="co">#        nrow()</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="4" type="a">
+<li>Dentre os jogos lançados em 1996 (yearpublished), qual possui a maior quantidade de avaliações (users_rated)? Considere apenas os jogos cujo tempo máximo de jogo (maxplaytime) é 120 minutos.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb138"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb138-1"><a href="#cb138-1" aria-hidden="true" tabindex="-1"></a><span class="co">#q3_d &lt;- df_boardgames %&gt;%</span></span>
+<span id="cb138-2"><a href="#cb138-2" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(yearpublished == 1996, maxplaytime == 120) %&gt;%</span></span>
+<span id="cb138-3"><a href="#cb138-3" aria-hidden="true" tabindex="-1"></a><span class="co">#        arrange(desc(users_rated)) %&gt;%</span></span>
+<span id="cb138-4"><a href="#cb138-4" aria-hidden="true" tabindex="-1"></a><span class="co">#        slice(1) %&gt;%</span></span>
+<span id="cb138-5"><a href="#cb138-5" aria-hidden="true" tabindex="-1"></a><span class="co">#        pull(name)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<ol start="5" type="a">
+<li>Dentre os jogos lançados em 1995 (yearpublished), qual possui a maior quantidade de caracteres na descrição (description)? Considere apenas os jogos cuja idade mínima para jogar (minage) é dada por um número par.</li>
+</ol>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb139"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb139-1"><a href="#cb139-1" aria-hidden="true" tabindex="-1"></a><span class="co">#q3_e &lt;- df_boardgames %&gt;%</span></span>
+<span id="cb139-2"><a href="#cb139-2" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(yearpublished == 1995, minage %% 2 == 0) %&gt;%</span></span>
+<span id="cb139-3"><a href="#cb139-3" aria-hidden="true" tabindex="-1"></a><span class="co">#        mutate(char_count = nchar(description)) %&gt;%</span></span>
+<span id="cb139-4"><a href="#cb139-4" aria-hidden="true" tabindex="-1"></a><span class="co">#        arrange(desc(char_count)) %&gt;%</span></span>
+<span id="cb139-5"><a href="#cb139-5" aria-hidden="true" tabindex="-1"></a><span class="co">#        slice(1) %&gt;%</span></span>
+<span id="cb139-6"><a href="#cb139-6" aria-hidden="true" tabindex="-1"></a><span class="co">#        pull(name)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<p><strong>Resultados</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb140"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb140-1"><a href="#cb140-1" aria-hidden="true" tabindex="-1"></a><span class="co">#cat("--- Respostas Questão 3 ---\n")</span></span>
+<span id="cb140-2"><a href="#cb140-2" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("a) Contagem (2 palavras e average &gt; 7.5):", q3_a, "\n")</span></span>
+<span id="cb140-3"><a href="#cb140-3" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("b) Contagem (Após 2010 e com !):", q3_b, "\n")</span></span>
+<span id="cb140-4"><a href="#cb140-4" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("c) Contagem (maxplayers &lt;= 12, minplaytime &gt; 70 e sem K):", q3_c, "\n")</span></span>
+<span id="cb140-5"><a href="#cb140-5" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("d) Jogo de 1996 com mais avaliações (users_rated):", q3_d, "\n")</span></span>
+<span id="cb140-6"><a href="#cb140-6" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("e) Jogo de 1995 (minage par) com descrição mais longa:", q3_e, "\n")</span></span>
+<span id="cb140-7"><a href="#cb140-7" aria-hidden="true" tabindex="-1"></a><span class="co">#</span></span>
+<span id="cb140-8"><a href="#cb140-8" aria-hidden="true" tabindex="-1"></a><span class="co">#}, error = function(e) {</span></span>
+<span id="cb140-9"><a href="#cb140-9" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("\nERRO: Não foi possível carregar ou combinar os arquivos BoardGames1.csv e BoardGames2.csv.\n")</span></span>
+<span id="cb140-10"><a href="#cb140-10" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("Certifique-se de que os arquivos estão no diretório de trabalho.\n")</span></span>
+<span id="cb140-11"><a href="#cb140-11" aria-hidden="true" tabindex="-1"></a><span class="co">#})</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="questão-4" class="level2">
+<h2 class="anchored" data-anchor-id="questão-4">Questão 4</h2>
+<p>Feriados são épocas importantes tanto para confraternizações, descansos e para viagens. Diversos países celebram diferentes feriados e com isso, muitas pessoas aproveitam para viajar.</p>
+<p>Os dados contidos em tuesdata &lt;- tidytuesdayR::tt_load(‘2024-12-24’) contêm duas tabelas, uma com informações sobre feriados globais e outra sobre a quantidade de passageiros mensais em aeroportos.</p>
+<p>Nota: Caso não consiga abrir o pacote, busque no Google alternativas para fazer a leitura da base de dados, por exemplo, direto de uma url.</p>
+<p>Instruções: Não manipule o nome dos feriados, nem dos países. Considere apenas informações completas.</p>
+<p>Acerca dos dados fornecidos, responda as seguintes questões:</p>
+<p>No ano de 2012 houveram quantos feriados no(a) país Hungary?</p>
+<ol type="a">
+<li><p>Em qual mês do ano de 2014 houve mais feriados no(a) país Hungary?</p></li>
+<li><p>Quantos passageiros (Total) foram registrados no aeroporto do(a) país Uk no mês com maior número de feriados do ano de 2013?</p></li>
+<li><p>Qual ano teve a maior média de passageiros do tipo International nos aeroportos do(a) país Switzerland?</p></li>
+<li><p>Qual país teve a maior quantidade de feriados públicos no ano de 2017?</p></li>
+<li><p>Qual ano teve a maior quantidade de passageiros nos aeroportos do(a) país Lithuania?</p></li>
+</ol>
+<p><strong>Preparação do ambiente</strong></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb141"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb141-1"><a href="#cb141-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instalar e carregar pacotes (se ainda não o fez)</span></span>
+<span id="cb141-2"><a href="#cb141-2" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("tidytuesdayR")</span></span>
+<span id="cb141-3"><a href="#cb141-3" aria-hidden="true" tabindex="-1"></a><span class="co"># install.packages("dplyr")</span></span>
+<span id="cb141-4"><a href="#cb141-4" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidytuesdayR)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Warning: pacote 'tidytuesdayR' foi compilado no R versão 4.4.3</code></pre>
+</div>
+<div class="sourceCode cell-code" id="cb143"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb143-1"><a href="#cb143-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(dplyr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb144"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb144-1"><a href="#cb144-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Tenta carregar os dados (pode levar um momento e requer conexão com a internet)</span></span>
+<span id="cb144-2"><a href="#cb144-2" aria-hidden="true" tabindex="-1"></a><span class="co">#tryCatch({</span></span>
+<span id="cb144-3"><a href="#cb144-3" aria-hidden="true" tabindex="-1"></a><span class="co">#    tuesdata &lt;- tidytuesdayR::tt_load('2024-12-24')</span></span>
+<span id="cb144-4"><a href="#cb144-4" aria-hidden="true" tabindex="-1"></a><span class="co">#    </span></span>
+<span id="cb144-5"><a href="#cb144-5" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extrai as tabelas</span></span>
+<span id="cb144-6"><a href="#cb144-6" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_holidays &lt;- tuesdata$global_holidays</span></span>
+<span id="cb144-7"><a href="#cb144-7" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_passengers &lt;- tuesdata$airport_passengers</span></span>
+<span id="cb144-8"><a href="#cb144-8" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb144-9"><a href="#cb144-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Garante informações completas (Nota: A filtragem completa pode ser ajustada</span></span>
+<span id="cb144-10"><a href="#cb144-10" aria-hidden="true" tabindex="-1"></a>    <span class="co"># dependendo de quais colunas você considera essenciais)</span></span>
+<span id="cb144-11"><a href="#cb144-11" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_holidays_clean &lt;- df_holidays %&gt;% filter(complete.cases(.))</span></span>
+<span id="cb144-12"><a href="#cb144-12" aria-hidden="true" tabindex="-1"></a><span class="co">#    df_passengers_clean &lt;- df_passengers %&gt;% filter(complete.cases(.))</span></span>
+<span id="cb144-13"><a href="#cb144-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-14"><a href="#cb144-14" aria-hidden="true" tabindex="-1"></a>    <span class="co"># --- Resposta Principal: Feriados em Hungary em 2012 ---</span></span>
+<span id="cb144-15"><a href="#cb144-15" aria-hidden="true" tabindex="-1"></a><span class="co">#    total_holidays_2012_hungary &lt;- df_holidays_clean %&gt;%</span></span>
+<span id="cb144-16"><a href="#cb144-16" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(country == "Hungary", lubridate::year(date) == 2012) %&gt;%</span></span>
+<span id="cb144-17"><a href="#cb144-17" aria-hidden="true" tabindex="-1"></a><span class="co">#        nrow()</span></span>
+<span id="cb144-18"><a href="#cb144-18" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("\nTotal de feriados em Hungary em 2012:", total_holidays_2012_hungary, "\n")</span></span>
+<span id="cb144-19"><a href="#cb144-19" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb144-20"><a href="#cb144-20" aria-hidden="true" tabindex="-1"></a>    <span class="co"># -----------------------------------------------------</span></span>
+<span id="cb144-21"><a href="#cb144-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-22"><a href="#cb144-22" aria-hidden="true" tabindex="-1"></a>    <span class="co"># a) Mês com mais feriados em Hungary em 2014</span></span>
+<span id="cb144-23"><a href="#cb144-23" aria-hidden="true" tabindex="-1"></a><span class="co">#    q4_a &lt;- df_holidays_clean %&gt;%</span></span>
+<span id="cb144-24"><a href="#cb144-24" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(country == "Hungary", lubridate::year(date) == 2014) %&gt;%</span></span>
+<span id="cb144-25"><a href="#cb144-25" aria-hidden="true" tabindex="-1"></a><span class="co">#        mutate(month_name = format(date, "%B")) %&gt;%</span></span>
+<span id="cb144-26"><a href="#cb144-26" aria-hidden="true" tabindex="-1"></a><span class="co">#        group_by(month_name) %&gt;%</span></span>
+<span id="cb144-27"><a href="#cb144-27" aria-hidden="true" tabindex="-1"></a><span class="co">#        summarise(count = n()) %&gt;%</span></span>
+<span id="cb144-28"><a href="#cb144-28" aria-hidden="true" tabindex="-1"></a><span class="co">#        arrange(desc(count)) %&gt;%</span></span>
+<span id="cb144-29"><a href="#cb144-29" aria-hidden="true" tabindex="-1"></a><span class="co">#        slice(1) %&gt;%</span></span>
+<span id="cb144-30"><a href="#cb144-30" aria-hidden="true" tabindex="-1"></a><span class="co">#        pull(month_name)</span></span>
+<span id="cb144-31"><a href="#cb144-31" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-32"><a href="#cb144-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># b) Passageiros (Total) no aeroporto do país Uk no mês com maior número de feriados em 2013</span></span>
+<span id="cb144-33"><a href="#cb144-33" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb144-34"><a href="#cb144-34" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 1. Encontra o mês com mais feriados no UK em 2013</span></span>
+<span id="cb144-35"><a href="#cb144-35" aria-hidden="true" tabindex="-1"></a><span class="co">#    uk_most_holiday_month_2013 &lt;- df_holidays_clean %&gt;%</span></span>
+<span id="cb144-36"><a href="#cb144-36" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(country == "Uk", lubridate::year(date) == 2013) %&gt;%</span></span>
+<span id="cb144-37"><a href="#cb144-37" aria-hidden="true" tabindex="-1"></a><span class="co">#        mutate(month_num = lubridate::month(date)) %&gt;%</span></span>
+<span id="cb144-38"><a href="#cb144-38" aria-hidden="true" tabindex="-1"></a><span class="co">#        group_by(month_num) %&gt;%</span></span>
+<span id="cb144-39"><a href="#cb144-39" aria-hidden="true" tabindex="-1"></a><span class="co">#        summarise(count = n()) %&gt;%</span></span>
+<span id="cb144-40"><a href="#cb144-40" aria-hidden="true" tabindex="-1"></a><span class="co">#        arrange(desc(count)) %&gt;%</span></span>
+<span id="cb144-41"><a href="#cb144-41" aria-hidden="true" tabindex="-1"></a><span class="co">#        slice(1) %&gt;%</span></span>
+<span id="cb144-42"><a href="#cb144-42" aria-hidden="true" tabindex="-1"></a><span class="co">#        pull(month_num)</span></span>
+<span id="cb144-43"><a href="#cb144-43" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb144-44"><a href="#cb144-44" aria-hidden="true" tabindex="-1"></a>    <span class="co"># 2. Encontra o total de passageiros nesse mês</span></span>
+<span id="cb144-45"><a href="#cb144-45" aria-hidden="true" tabindex="-1"></a><span class="co">#    q4_b &lt;- df_passengers_clean %&gt;%</span></span>
+<span id="cb144-46"><a href="#cb144-46" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(country == "Uk", lubridate::year(date) == 2013, lubridate::month(date) == uk_most_holiday_month_2013) %&gt;%</span></span>
+<span id="cb144-47"><a href="#cb144-47" aria-hidden="true" tabindex="-1"></a><span class="co">#        summarise(total_passengers = sum(Total)) %&gt;%</span></span>
+<span id="cb144-48"><a href="#cb144-48" aria-hidden="true" tabindex="-1"></a><span class="co">#        pull(total_passengers)</span></span>
+<span id="cb144-49"><a href="#cb144-49" aria-hidden="true" tabindex="-1"></a>        </span>
+<span id="cb144-50"><a href="#cb144-50" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-51"><a href="#cb144-51" aria-hidden="true" tabindex="-1"></a>    <span class="co"># c) Ano com maior média de passageiros International em Switzerland</span></span>
+<span id="cb144-52"><a href="#cb144-52" aria-hidden="true" tabindex="-1"></a><span class="co">#    q4_c &lt;- df_passengers_clean %&gt;%</span></span>
+<span id="cb144-53"><a href="#cb144-53" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(country == "Switzerland") %&gt;%</span></span>
+<span id="cb144-54"><a href="#cb144-54" aria-hidden="true" tabindex="-1"></a><span class="co">#        group_by(Year = lubridate::year(date)) %&gt;%</span></span>
+<span id="cb144-55"><a href="#cb144-55" aria-hidden="true" tabindex="-1"></a><span class="co">#        summarise(avg_international = mean(International, na.rm = TRUE)) %&gt;%</span></span>
+<span id="cb144-56"><a href="#cb144-56" aria-hidden="true" tabindex="-1"></a><span class="co">#        arrange(desc(avg_international)) %&gt;%</span></span>
+<span id="cb144-57"><a href="#cb144-57" aria-hidden="true" tabindex="-1"></a><span class="co">#        slice(1) %&gt;%</span></span>
+<span id="cb144-58"><a href="#cb144-58" aria-hidden="true" tabindex="-1"></a><span class="co">#        pull(Year)</span></span>
+<span id="cb144-59"><a href="#cb144-59" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-60"><a href="#cb144-60" aria-hidden="true" tabindex="-1"></a>    <span class="co"># d) País com maior quantidade de feriados públicos em 2017</span></span>
+<span id="cb144-61"><a href="#cb144-61" aria-hidden="true" tabindex="-1"></a><span class="co">#    q4_d &lt;- df_holidays_clean %&gt;%</span></span>
+<span id="cb144-62"><a href="#cb144-62" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(lubridate::year(date) == 2017, holiday_type == "Public") %&gt;%</span></span>
+<span id="cb144-63"><a href="#cb144-63" aria-hidden="true" tabindex="-1"></a><span class="co">#        group_by(country) %&gt;%</span></span>
+<span id="cb144-64"><a href="#cb144-64" aria-hidden="true" tabindex="-1"></a><span class="co">#        summarise(count = n()) %&gt;%</span></span>
+<span id="cb144-65"><a href="#cb144-65" aria-hidden="true" tabindex="-1"></a><span class="co">#        arrange(desc(count)) %&gt;%</span></span>
+<span id="cb144-66"><a href="#cb144-66" aria-hidden="true" tabindex="-1"></a><span class="co">#        slice(1) %&gt;%</span></span>
+<span id="cb144-67"><a href="#cb144-67" aria-hidden="true" tabindex="-1"></a><span class="co">#        pull(country)</span></span>
+<span id="cb144-68"><a href="#cb144-68" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-69"><a href="#cb144-69" aria-hidden="true" tabindex="-1"></a>    <span class="co"># e) Ano com a maior quantidade de passageiros (Total) em Lithuania</span></span>
+<span id="cb144-70"><a href="#cb144-70" aria-hidden="true" tabindex="-1"></a><span class="co">#    q4_e &lt;- df_passengers_clean %&gt;%</span></span>
+<span id="cb144-71"><a href="#cb144-71" aria-hidden="true" tabindex="-1"></a><span class="co">#        filter(country == "Lithuania") %&gt;%</span></span>
+<span id="cb144-72"><a href="#cb144-72" aria-hidden="true" tabindex="-1"></a><span class="co">#        group_by(Year = lubridate::year(date)) %&gt;%</span></span>
+<span id="cb144-73"><a href="#cb144-73" aria-hidden="true" tabindex="-1"></a><span class="co">#        summarise(total_passengers = sum(Total, na.rm = TRUE)) %&gt;%</span></span>
+<span id="cb144-74"><a href="#cb144-74" aria-hidden="true" tabindex="-1"></a><span class="co">#        arrange(desc(total_passengers)) %&gt;%</span></span>
+<span id="cb144-75"><a href="#cb144-75" aria-hidden="true" tabindex="-1"></a><span class="co">#        slice(1) %&gt;%</span></span>
+<span id="cb144-76"><a href="#cb144-76" aria-hidden="true" tabindex="-1"></a><span class="co">#        pull(Year)</span></span>
+<span id="cb144-77"><a href="#cb144-77" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-78"><a href="#cb144-78" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Exibe os resultados</span></span>
+<span id="cb144-79"><a href="#cb144-79" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("\n--- Respostas Questão 4 ---\n")</span></span>
+<span id="cb144-80"><a href="#cb144-80" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("a) Mês com mais feriados em Hungary em 2014:", q4_a, "\n")</span></span>
+<span id="cb144-81"><a href="#cb144-81" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("b) Passageiros (Total) no UK (mês de pico em 2013):", q4_b, "\n")</span></span>
+<span id="cb144-82"><a href="#cb144-82" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("c) Ano com maior média International em Switzerland:", q4_c, "\n")</span></span>
+<span id="cb144-83"><a href="#cb144-83" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("d) País com mais feriados Public em 2017:", q4_d, "\n")</span></span>
+<span id="cb144-84"><a href="#cb144-84" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("e) Ano com mais passageiros em Lithuania:", q4_e, "\n")</span></span>
+<span id="cb144-85"><a href="#cb144-85" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb144-86"><a href="#cb144-86" aria-hidden="true" tabindex="-1"></a><span class="co">#}, error = function(e) {</span></span>
+<span id="cb144-87"><a href="#cb144-87" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("\nERRO: Não foi possível carregar os dados do TidyTuesday (2024-12-24).\n")</span></span>
+<span id="cb144-88"><a href="#cb144-88" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("Verifique sua conexão com a internet e se o pacote 'tidytuesdayR' está instalado e a URL está acessível.\n")</span></span>
+<span id="cb144-89"><a href="#cb144-89" aria-hidden="true" tabindex="-1"></a><span class="co">#    cat("Erro reportado:", conditionMessage(e), "\n")</span></span>
+<span id="cb144-90"><a href="#cb144-90" aria-hidden="true" tabindex="-1"></a><span class="co">#})</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+</section>
+
+</main>
+<!-- /main column -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
