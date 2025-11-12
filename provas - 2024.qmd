@@ -807,31 +807,31 @@ haversine_distance <- function(lat1, lon1, lat2, lon2) {
 }
 
 # 3. Carregamento dos dados (Assumindo que michelin.csv está no diretório de trabalho)
-# df_michelin <- read.csv("michelin.csv")
+df_michelin <- read.csv("michelin.csv")
 
 # 4. Localiza o restaurante de partida ('Per Se')
-# per_se <- df_michelin %>% filter(name == "Per Se", city == "New York", country == "USA")
-# lat_per_se <- per_se$latitude[1]
-# lon_per_se <- per_se$longitude[1]
+per_se <- df_michelin %>% filter(Name == "Per Se", Location == "New York, USA")
+lat_per_se <- per_se$Latitude[1]
+lon_per_se <- per_se$Longitude[1]
 
 # 5. Filtra restaurantes com exatamente '1 Star'
-# df_one_star <- df_michelin %>% filter(stars == "1 Star")
+df_one_star <- df_michelin %>% filter(Award == "1 Star")
 
 # 6. Calcula a distância de 'Per Se' para todos os restaurantes '1 Star'
-# distancias <- df_one_star %>%
-#   rowwise() %>%
-#   mutate(
-#     dist_km = haversine_distance(lat_per_se, lon_per_se, latitude, longitude)
-#   ) %>%
-#   ungroup()
+distancias <- df_one_star %>%
+   rowwise() %>%
+   mutate(
+     dist_km = haversine_distance(lat_per_se, lon_per_se, Latitude, Longitude)
+   ) %>%
+   ungroup()
 
 # 7. Encontra a distância mínima (e remove a distância de Per Se para ele mesmo, se estiver na lista)
-# min_distance <- distancias %>%
-#   filter(dist_km > 0.1) %>% # Filtra distâncias muito pequenas (para não considerar o próprio restaurante)
-#   summarise(min_dist = min(dist_km)) %>%
-#   pull(min_dist)
+min_distance <- distancias %>%
+   filter(dist_km > 0.1) %>% # Filtra distâncias muito pequenas (para não considerar o próprio restaurante)
+   summarise(min_dist = min(dist_km)) %>%
+   pull(min_dist)
 
-# cat("Distância mínima para o próximo restaurante 1 Star:", round(min_distance, 2), "km\n")
+ cat("Distância mínima para o próximo restaurante 1 Star:", round(min_distance, 2), "km\n")
 ```
 
 ## Questão 3
